@@ -12,6 +12,8 @@ function field(fields){
           return fieldConstructor
         }
         field()
+        var reachField=this.fieldConstructor
+        console.log(reachField)
       }
       field(){
         this.fields="constructorMain"
