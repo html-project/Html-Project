@@ -15,3 +15,8 @@ var plus=class{
     }
   }
 }
+function callPlus(func){
+  console.log(plus)
+  console.log(func)
+}
+callPlus(plus, "function")
