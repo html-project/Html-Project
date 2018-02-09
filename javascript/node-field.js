@@ -13,5 +13,10 @@ var classing=class{
 console.log(classing)
 function addSomething(){
   var functionLevel="1"
+  if (functionLevel = ""){
+    console.log(functionLevel)
+  }else{
+    console.log(classing)
+  }
 }
 addSomething()
