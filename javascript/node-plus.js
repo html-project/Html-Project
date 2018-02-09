@@ -18,3 +18,4 @@ var plus=class{
 function callPlus(){
   console.log(plus)
 }
+callPlus()
