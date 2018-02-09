@@ -5,6 +5,12 @@ function field(fields){
     var field=class{
       constructor(){
         var fieldConstructor="Logs"
+        this.fieldConstructor=fieldConstructor
+        if(this.fieldConstructor){
+          return this.fieldConstructor
+        }else{
+          return fieldConstructor
+        }
       }
     }
     console.log(field)
