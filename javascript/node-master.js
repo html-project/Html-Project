@@ -11,6 +11,11 @@ function field(fields){
         }else{
           return fieldConstructor
         }
+        field()
+      }
+      field(){
+        this.fields="constructorMain"
+        console.log(fields)
       }
     }
     console.log(field)
