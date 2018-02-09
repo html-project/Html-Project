@@ -11,3 +11,7 @@ var classing=class{
   }
 }
 console.log(classing)
+function addSomething(){
+  var functionLevel="1"
+}
+addSomething()
