@@ -7,7 +7,7 @@ var classing=class{
   }
   valueMinimizing(){
     this.function="This is a function"
-    this.value="This is a value"
+    this.values="This is some values here"
   }
 }
 console.log(classing)
