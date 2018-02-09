@@ -43,6 +43,7 @@ var fields = class{
   }
   fieldMinus(field){
     this.numberField=field
+    this.plusField=this.numberField
   }
 }
 console.log(fields)
