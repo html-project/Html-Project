@@ -60,8 +60,3 @@ var getMaster = class{
   }
 }
 console.log(getMaster)
-function getPropseDescription(){
-  var proposeDescription=":"
-  console.log(proposeDescription)
-}
-getProposeDescription()
