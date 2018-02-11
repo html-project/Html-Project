@@ -59,7 +59,7 @@ var getMaster = class{
   }
   getMaster(master){
     if (!this.master){
-      if (master==this.field){
+      if (master==this.plus){
         this.master=this.field
       }else{
         this.master=master
