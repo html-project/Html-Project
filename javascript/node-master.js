@@ -6,10 +6,10 @@ function field(fields){
       constructor(){
         var fieldConstructor="Logs"
         this.fieldConstructor=fieldConstructor
-        if(this.fieldConstructor){
-          return this.fieldConstructor
-        }else{
+        if(!this.fieldConstructor){
           return fieldConstructor
+        }else{
+          return this.fieldConstructor
         }
         field()
         var reachField=this.fieldConstructor
