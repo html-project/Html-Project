@@ -107,4 +107,5 @@ var newLogs={
     })
   }
 }
+document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
 newLogs.logs(user.contents)
