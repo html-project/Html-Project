@@ -74,3 +74,37 @@ var getMaster = class{
   }
 }
 console.log(getMaster)
+class user{
+  constructor(){
+    setContents([1, 2, 3])
+    setLogs("none")
+    setSettingLogs("contents: "+this.contents)
+  }
+  setContents(contents){
+    this.contents=contents
+  }
+  setLogs(logs){
+    this.logs=logs
+  }
+  setSettingLogs(settingLogs){
+    this.settingLogs=settingLogs
+  }
+}
+var newLogs={
+  content: user.contents,
+  userLogs: user.settingLogs,
+  logs: function(content){
+    var content=[1, 2, 3]
+    content.forEach(contents =>{
+      var course=class{
+        constructor(){
+          this.contents=user.contents
+          this.settingLogs=user.settingLogs
+          this.logs=user.logs
+        }
+      }
+      console.log("User contents: "+course)
+    })
+  }
+}
+newLogs.logs(user.contents)

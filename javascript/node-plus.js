@@ -1,12 +1,9 @@
 var plus=class{
   constructor(){
-    if ("waring" !=
-      waring({
-        console.log("waring")
-      })){
-        return "waring"
-      }
+    if ("waring" == "waring"){
+      return "waring"
     }
+  }
     waring(){
       var masterWaring=this.setPlus(this.plus)
       var waring=this.getPlus()
@@ -14,7 +11,6 @@ var plus=class{
       this.waring=waring
     }
   }
-}
 function callPlus(){
   console.log(plus)
 }
