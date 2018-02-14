@@ -90,6 +90,9 @@ class user{
     this.settingLogs=settingLogs
   }
 }
+user.contents=[1, 2, 3]
+user.settingLogs="contents: "+[1, 2, 3]
+user.logs="none"
 var newLogs={
   content: user.contents,
   userLogs: user.settingLogs,
@@ -107,5 +110,9 @@ var newLogs={
     })
   }
 }
+function callNewLogs(func){
+  console.log(func)
+}
+callNewLogs(newLogs)
 document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
 newLogs.logs(user.contents)
