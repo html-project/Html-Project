@@ -1,7 +1,10 @@
 var plus=class{
   constructor(){
-    if ("waring" == "waring"){
+    if ("waring" != "waringTwo"){
       return "waring"
+    }else{
+      var structure="waring"
+      return structure
     }
   }
   waring(){
