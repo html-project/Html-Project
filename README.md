@@ -56,7 +56,7 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
-If you have problems, then fallback to Xorg by modifying **/etc/gdm/custom.conf** file:
+If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
 
 > $$ GDM configuration storage
 >
