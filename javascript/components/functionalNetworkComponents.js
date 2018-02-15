@@ -1,4 +1,26 @@
 var functioningDate={
+  innerHTML: {
+    combinePropertyValue: function(){
+      var syntaxes=[1]
+      syntaxes.forEach(values => {
+        this.syntaxValues=syntaxes
+        this.functionMastering=class{
+          constructor(){
+            this.mastering="mastering"+syntaxes
+            returnValues(this.mastering)
+          }
+          returnValues(mastering){
+            if (this.values != ""){
+              this.values=this.mastering
+            }else{
+              this.mastering=mastering
+              return this.mastering
+            }
+          }
+        }
+      })
+    }
+  },
   combineValue: function(syntax){
     this.syntax=syntax
     var functionsToDeclare=class{
