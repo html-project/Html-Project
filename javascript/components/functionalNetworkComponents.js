@@ -38,6 +38,9 @@ var functioningDate={
                     }else{
                       value=[1, 2, 3]
                     }
+                    value.forEach(values =>{
+                      console.log("hello station!")
+                    })
                   }
                 },
                 getInnerProperty: function(){
