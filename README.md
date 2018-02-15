@@ -8,12 +8,14 @@ If you are a Windows user and you wish to use Chrome, please download at https:/
 
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
-##### Chromium:
+###### Chromium:
 > sudo apt-get install chromium-browser
 
-##### Chrome:
+###### Chrome:
 > sudo apt-get install libxss1 libappindicator1 libindicator7
+>
 > wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+>
 > sudo dpkg -i google-chrome*.deb
 
 If you have error messages while you installing it, please run:
@@ -23,8 +25,10 @@ If you have error messages while you installing it, please run:
 Then re-run this:
 
 > sudo dpkg -i google-chrome*.deb
+
 #### Suse/Opensuse:
 > wget https://dl.google.com/linux/linux_signing_key.pub
+>
 > sudo rpm --import linux_signing_key.pub
 
 64 bit:
@@ -34,6 +38,7 @@ Then re-run this:
 32 bit:
 > sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/i386 google
 > sudo zypper in  google-chrome-stable
+
 #### Fedora/Cent OS/RHEL:
 > sudo -i
 > cat << EOF > /etc/yum.repos.d/google-chrome.repo
@@ -45,19 +50,25 @@ gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
 
-## Fedora 27/26/25/24
+##### Fedora 27/26/25/24
 > dnf install google-chrome-unstable
 
-## CentOS/RHEL 7.4
+##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
 If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
 
-> # GDM configuration storage
+> $$ GDM configuration storage
 >
 > [daemon]
-> # Uncomment the line below to force the login screen to use Xorg
+>
+> $$ Uncomment the line below to force the login screen to use Xorg
+>
 > WaylandEnable=false
 >
 > [security]
 > ...
+
+If you are a Linux use and wish to use firefox browser, please open on the launcher, or please type the following command:
+
+> firefox

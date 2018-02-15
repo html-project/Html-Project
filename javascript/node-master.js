@@ -104,6 +104,11 @@ var newLogs={
           this.contents=user.contents
           this.settingLogs=user.settingLogs
           this.logs=user.logs
+          var userSettingLogs=getSettingLogs()
+          console.log(userSettingLogs)
+        }
+        getSettingLogs(){
+          return this.settingLogs
         }
       }
       console.log("User contents: "+course)
