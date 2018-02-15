@@ -50,8 +50,13 @@ console.log(fields)
 var getMaster = class{
   constructor(){
     var plus="This is a property"
-    var field=master
     var master=plus+field
+    var field=master
+    if (master != plus){
+      this.master=master
+    }else{
+      this.master=null
+    }
     master(field, master, plus)
   }
   setPlus(plus){
