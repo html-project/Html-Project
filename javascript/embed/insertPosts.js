@@ -21,8 +21,8 @@ function importModule(){
         console.log("Importing functions: "+contentsToImport)
         inserts.setImportFunctions(contentsToImport)
       })
-    }
-    getModule: users.module
+    },
+    getModule: users.module,
     setUserModule: function(moduleFunc){
       users.module=moduleFunc
     }

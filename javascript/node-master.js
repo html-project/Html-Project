@@ -75,11 +75,6 @@ var getMaster = class{
 }
 console.log(getMaster)
 class user{
-  constructor(){
-    setContents([1, 2, 3])
-    setLogs("none")
-    setSettingLogs("contents: "+this.contents)
-  }
   setContents(contents){
     this.contents=contents
   }
@@ -90,9 +85,22 @@ class user{
     this.settingLogs=settingLogs
   }
 }
+var users=new user()
 user.contents=[1, 2, 3]
 user.settingLogs="contents: "+[1, 2, 3]
 user.logs="none"
+function getNewLogs(){
+  var logs={
+    settingLogs: user.settingLogs,
+    logs: user.logs,
+    property: class{
+      constructor(){
+        var logs=user.logs
+        var settingLogs=user.settingLogs
+      }
+    }
+  }
+}
 var newLogs={
   content: user.contents,
   userLogs: user.settingLogs,
@@ -121,3 +129,4 @@ function callNewLogs(func){
 callNewLogs(newLogs)
 document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
 newLogs.writeLogs(user.contents)
+getNewLogs()
