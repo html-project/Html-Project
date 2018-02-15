@@ -78,4 +78,4 @@ or:
 > bash
 > firefox
 
-Please sure to be use the python localhost: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+Please sure to be use the local testing server to the port 3000 (https://localhost:3000/): https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
