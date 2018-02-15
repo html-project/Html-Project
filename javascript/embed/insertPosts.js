@@ -30,3 +30,4 @@ function importModule(){
   functioning.setUserModule([1, 2])
   var modules=functioning.getModule
 }
+importModule()

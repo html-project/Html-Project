@@ -5,7 +5,18 @@ class EbbedDate{
   }
   consDating(datingFunc){
     if (datingFunc != ""){
-      var element=this.datingFunction;
+      var element=this.datingFunction
+      var dates="ebbedFunction != new Date()"+this.datingFunction+{
+        expected: function(){
+          var contents=[1, 2, 4]
+          contents.forEach(content => {
+            var stations={
+              commits: [1, 2]
+            }
+          })
+        }
+      }
+      dates.expected()
     }
   }
 }

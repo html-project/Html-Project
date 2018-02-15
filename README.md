@@ -56,7 +56,7 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
-If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
+If you have problems, please fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
 
 > $$ GDM configuration storage
 >
@@ -69,8 +69,13 @@ If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.con
 > [security]
 > ...
 
-If you are a Linux use and wish to use firefox browser, please open on the launcher, or please type the following command:
+If you are a Linux user and wish to use firefox browser, please open on the launcher, or please type the following command:
 
+> firefox
+
+or:
+
+> bash
 > firefox
 
 Please sure to be use the python localhost: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
