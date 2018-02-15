@@ -17,3 +17,10 @@ document.write(
     "<br>"+routesAccepting+"</br>"
   )+routesAccepting
 )
+var values=class{
+  constructor(){
+    this.information=routesAccepting.getServerRoute()
+    this.requiresInformation=routesAccepting.localhost
+  }
+}
+console.log(values)

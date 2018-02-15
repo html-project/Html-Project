@@ -1,4 +1,9 @@
 "attributes": {
   "Index": false,
-  "FreeAddition": true
+  "FreeAddition": true,
+  "MasterAttributes": {
+    "DataProcessing": false,
+    "DataProcessesed": true,
+    "DataBegins": false
+  }
 }
