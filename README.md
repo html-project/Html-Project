@@ -56,12 +56,15 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
-If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
+If you have problems, then fallback to Xorg by modifying **/etc/gdm/custom.conf** file:
 
 > $$ GDM configuration storage
 >
 > [daemon]
+<<<<<<< HEAD
 >
+=======
+>>>>>>> 9bb99fd671e390a39822281d1aaec736c31e5a39
 > $$ Uncomment the line below to force the login screen to use Xorg
 >
 > WaylandEnable=false
