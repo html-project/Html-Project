@@ -12,3 +12,8 @@ function acceptServers(){
   var localhost="localhost:3000/"
   var name="FlowRoute"
 }
+document.write(
+  return(
+    "<br>"+routesAccepting+"</br>"
+  )+routesAccepting
+)
