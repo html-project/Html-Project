@@ -21,6 +21,15 @@ var values=class{
   constructor(){
     this.information=routesAccepting.getServerRoute()
     this.requiresInformation=routesAccepting.localhost
+    var information={
+      getValues: function(){
+        var conjugating=[1, 2, 4]
+        conjugating.forEach(informations =>{
+          this.description="Conjugating routes"
+        })
+      }
+    }
+    information.getValues()
   }
 }
 console.log(values)

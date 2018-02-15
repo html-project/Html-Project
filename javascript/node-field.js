@@ -25,4 +25,10 @@ var projects={
     return this.stations
   }
 }
+var newProjects=projects.extend({
+  stations: [1, 2, 4]
+  getStationValue: function(){
+    return this.stations
+  }
+})
 projects.setStations("1, 2, 3, 4")

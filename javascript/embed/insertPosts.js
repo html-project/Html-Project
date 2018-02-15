@@ -12,6 +12,7 @@ class inserts{
     this.importedFunctions=this.importsFunction
   }
 }
+users.module=[1]
 function importModule(){
   var functioning={
     modulesToImport: function(theContent){
@@ -21,5 +22,11 @@ function importModule(){
         inserts.setImportFunctions(contentsToImport)
       })
     }
+    getModule: users.module
+    setUserModule: function(moduleFunc){
+      users.module=moduleFunc
+    }
   }
+  functioning.setUserModule([1, 2])
+  var modules=functioning.getModule
 }
