@@ -96,7 +96,7 @@ user.logs="none"
 var newLogs={
   content: user.contents,
   userLogs: user.settingLogs,
-  logs: function(content){
+  writeLogs: function(content){
     var content=[1, 2, 3]
     content.forEach(contents =>{
       var course=class{
@@ -115,4 +115,4 @@ function callNewLogs(func){
 }
 callNewLogs(newLogs)
 document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
-newLogs.logs(user.contents)
+newLogs.writeLogs(user.contents)

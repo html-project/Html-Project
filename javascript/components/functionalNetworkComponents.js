@@ -19,6 +19,37 @@ var functioningDate={
           }
         }
       })
+    },
+    outerClass: {
+      combineSyntax: function(){
+        var classToFunction=class{
+          constructor(){
+            this.values=[1, 2, 3]
+            var contents=[1]
+            contents.forEach(content => {
+              var Posts={
+                property: [1, 2, 3],
+                innerProperty: {
+                  value: [1, 2],
+                  combine: function(value){
+                    var value=this.values
+                    if (this.values != null){
+                      value=this.values
+                    }else{
+                      value=[1, 2, 3]
+                    }
+                  }
+                },
+                getInnerProperty: function(){
+                  return this.innerProperty
+                }
+              }
+              Posts.innerProperty.combine([1, 2, 3, 4])
+              var innerPropertyValue=Posts.getInnerProperty()
+            })
+          }
+        }
+      }
     }
   },
   combineValue: function(syntax){
