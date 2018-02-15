@@ -50,7 +50,14 @@ console.log(fields)
 var getMaster = class{
   constructor(){
     var plus="This is a property"
-    var master=plus+field
+    var master={
+      property: function(){
+        var properties=[1, 2, 3]
+        properties.forEach(property =>{
+          console.log(properties)
+        })
+      }
+    }
     var field=master
     if (master != plus){
       this.master=master
