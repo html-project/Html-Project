@@ -53,10 +53,10 @@ EOF
 
 If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
 
-> # GDM configuration storage
+> $$ GDM configuration storage
 >
 > [daemon]
-> # Uncomment the line below to force the login screen to use Xorg
+> $$ Uncomment the line below to force the login screen to use Xorg
 > WaylandEnable=false
 >
 > [security]
