@@ -57,6 +57,7 @@ If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.con
 >
 > [daemon]
 > $$ Uncomment the line below to force the login screen to use Xorg
+>
 > WaylandEnable=false
 >
 > [security]
