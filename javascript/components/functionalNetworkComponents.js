@@ -39,6 +39,7 @@ var functioningDate={
                       value=[1, 2, 3]
                     }
                     value.forEach(values =>{
+                      this.actionValues=[1, 2]
                       console.log("hello station!")
                     })
                   }
@@ -49,6 +50,11 @@ var functioningDate={
               }
               Posts.innerProperty.combine([1, 2, 3, 4])
               var innerPropertyValue=Posts.getInnerProperty()
+              if (innerPropertyValue.value != [1, 3] ){
+                innerPropertyValue.value=[1, 3]
+              }else{
+                innerPropertyValue.value=[1, 2]
+              }
             })
           }
         }
