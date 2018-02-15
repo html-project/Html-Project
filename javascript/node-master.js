@@ -112,6 +112,7 @@ function getNewLogs(){
       }
     }
   }
+  console.log(logs.property)
 }
 var newLogs={
   content: user.contents,
