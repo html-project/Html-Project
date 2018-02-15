@@ -1,18 +1,18 @@
 var plus=class{
   constructor(){
-    if ("waring" !=
-      waring({
-        console.log("waring")
-      })){
-        return "waring"
-      }
+    if ("waring" != "waringTwo"){
+      return "waring"
+    }else{
+      var structure="waring"
+      return structure
     }
-    waring(){
-      var masterWaring=this.setPlus(this.plus)
-      var waring=this.getPlus()
-      this.garble=masterWaring
-      this.waring=waring
-    }
+  }
+  waring(){
+    var masterWaring=this.setPlus(this.plus)
+    var waring=this.getPlus()
+    this.garble=masterWaring
+    this.waring=waring
+    this.toPlusSet=this.waring+this.garble
   }
 }
 function callPlus(){

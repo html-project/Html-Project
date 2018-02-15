@@ -1,9 +1,6 @@
 var classing=class{
   constructor(){
     valueMinimizing()
-    if (this.function != ""){
-      return this.function
-    }
   }
   valueMinimizing(){
     this.function="This is a function"
@@ -20,3 +17,18 @@ function addSomething(){
   }
 }
 addSomething()
+var projects={
+  setStations: function(station){
+    this.stations=station
+  },
+  getStations: function(){
+    return this.stations
+  }
+}
+var newProjects={
+  stations: [1, 2, 4],
+  getStationValue: function(){
+    return this.stations
+  }
+}
+projects.setStations("1, 2, 3, 4")

@@ -6,10 +6,10 @@ function field(fields){
       constructor(){
         var fieldConstructor="Logs"
         this.fieldConstructor=fieldConstructor
-        if(this.fieldConstructor){
-          return this.fieldConstructor
-        }else{
+        if(!this.fieldConstructor){
           return fieldConstructor
+        }else{
+          return this.fieldConstructor
         }
         field()
         var reachField=this.fieldConstructor
@@ -74,3 +74,59 @@ var getMaster = class{
   }
 }
 console.log(getMaster)
+class user{
+  setContents(contents){
+    this.contents=contents
+  }
+  setLogs(logs){
+    this.logs=logs
+  }
+  setSettingLogs(settingLogs){
+    this.settingLogs=settingLogs
+  }
+}
+var users=new user()
+user.contents=[1, 2, 3]
+user.settingLogs="contents: "+[1, 2, 3]
+user.logs="none"
+function getNewLogs(){
+  var logs={
+    settingLogs: user.settingLogs,
+    logs: user.logs,
+    property: class{
+      constructor(){
+        var logs=user.logs
+        var settingLogs=user.settingLogs
+      }
+    }
+  }
+}
+var newLogs={
+  content: user.contents,
+  userLogs: user.settingLogs,
+  writeLogs: function(content){
+    var content=[1, 2, 3]
+    content.forEach(contents =>{
+      var course=class{
+        constructor(){
+          this.contents=user.contents
+          this.settingLogs=user.settingLogs
+          this.logs=user.logs
+          var userSettingLogs=getSettingLogs()
+          console.log(userSettingLogs)
+        }
+        getSettingLogs(){
+          return this.settingLogs
+        }
+      }
+      console.log("User contents: "+course)
+    })
+  }
+}
+function callNewLogs(func){
+  console.log(func)
+}
+callNewLogs(newLogs)
+document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
+newLogs.writeLogs(user.contents)
+getNewLogs()
