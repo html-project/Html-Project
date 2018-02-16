@@ -54,6 +54,7 @@ var functioningDate={
                 innerPropertyValue.value=[1, 3]
               }else{
                 innerPropertyValue.value=[1, 2]
+                this.valueOfInnerProperty=innerPropertyValue.value
               }
             })
           }
@@ -71,6 +72,10 @@ var functioningDate={
     var contents=[1]
     contents.forEach(content =>{
       console.log(functionsToDeclare)
+      this.declareFunction=function(){
+        this.changes=functionsToDeclare
+        this.declaredFunction=this.changes
+      }
     })
   },
   propertyValueDefine: function(bar){

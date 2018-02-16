@@ -58,7 +58,8 @@ var getMaster = class{
         })
       },
       extend: function(variable){
-        this.variable=variable
+        this.enterRoadStation=variable.packages
+        this.variable=variable+this.enterRoadStation
         var master=this.enterRoadStation
         console.log(master)
       }
@@ -67,8 +68,10 @@ var getMaster = class{
     if (master != plus){
       this.master=master
       master.extend({
-        functionToExtend: function(functions){
-          this.extendFunctions=functions
+        packages: {
+          extendFunction: function(extend){
+            this.osx=extend
+          }
         }
       })
     }else{
