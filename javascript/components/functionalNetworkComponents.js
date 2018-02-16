@@ -57,6 +57,10 @@ var functioningDate={
                 this.valueOfInnerProperty=innerPropertyValue.value
               }
             })
+            if (contents != [1]){
+              this.valueContents=contents
+              this.contents=[1]
+            }
           }
         }
       }
