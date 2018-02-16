@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+ - 2.2
+ - jruby
+ - rbx-3
+deploy:
+  skip_cleanup: true
+sudo: enabled
