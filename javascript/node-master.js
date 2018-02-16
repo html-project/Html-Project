@@ -56,11 +56,19 @@ var getMaster = class{
         properties.forEach(property =>{
           console.log(properties)
         })
+      },
+      extend: function(variable){
+        this.variable=variable
       }
     }
     var field=master
     if (master != plus){
       this.master=master
+      master.extend({
+        functionToExtend: function(functions){
+          this.extendFunctions=functions
+        }
+      })
     }else{
       this.master=null
     }
