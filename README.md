@@ -18,7 +18,7 @@ If you are a Linux user and wish to use Chrome, please follow the following step
 >
 > sudo dpkg -i google-chrome*.deb
 
-If you have error messages while you installing it, please run:
+If you have error messages while you installing with this command, please run:
 
 > sudo apt-get install -f
 
