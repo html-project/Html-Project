@@ -59,6 +59,8 @@ var getMaster = class{
       },
       extend: function(variable){
         this.variable=variable
+        var master=this.enterRoadStation
+        console.log(master)
       }
     }
     var field=master
