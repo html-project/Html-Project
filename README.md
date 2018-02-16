@@ -1,7 +1,7 @@
 ![hello](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
 [![Coverage Status](https://coveralls.io/repos/github/zixuan75/html_project/badge.svg?branch=master)](https://coveralls.io/github/zixuan75/html_project?branch=master)
 # html_project
-A HTML program runs Firefox and Chrome.
+A HTML program that runs browser Firefox and Chrome.
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer.
 
