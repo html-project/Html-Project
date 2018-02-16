@@ -1,3 +1,4 @@
+![hello](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
 [![Coverage Status](https://coveralls.io/repos/github/zixuan75/html_project/badge.svg?branch=master)](https://coveralls.io/github/zixuan75/html_project?branch=master)
 # html_project
 A HTML program runs Firefox and Chrome.
