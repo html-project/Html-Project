@@ -35,14 +35,17 @@ Then you can re-run this:
 
 64 bit:
 > sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64 google
+>
 > sudo zypper in google-chrome-stable
 
 32 bit:
 > sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/i386 google
+>
 > sudo zypper in  google-chrome-stable
 
 #### Fedora/Cent OS/RHEL:
 > sudo -i
+>
 > cat << EOF > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome - \$basearch
@@ -81,6 +84,7 @@ If you are a Linux user and wish to use firefox browser, please open on the laun
 or:
 
 > bash
+>
 > firefox
 
 Please sure to be use the local testing server to the port 3000 (https://localhost:3000/): https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
