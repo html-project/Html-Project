@@ -61,7 +61,7 @@ var getMaster = class{
         this.enterRoadStation=variable.packages
         this.variable=variable+this.enterRoadStation
         var master=this.enterRoadStation
-        console.log(master)
+        console.log(master+this.variable)
       }
     }
     var field=master

@@ -3,5 +3,6 @@
 "attributeMasteringes": false
 "setAttributes": {
   "attributeFunctions": false,
-  "attributeStatements": false
+  "attributeStatements": false,
+  "getServerAttributes": false
 }
