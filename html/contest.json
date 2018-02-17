@@ -10,3 +10,4 @@
 "bounds": false
 "processedBounds": true
 "processingBounds": false
+"changeVarBounds": false
