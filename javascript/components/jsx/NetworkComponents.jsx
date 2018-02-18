@@ -6,6 +6,15 @@ Components=React.getClass(){
   }
   setComponents(){
     var classComponents=getProperty(
+      setFooter(footer){
+        this.props.footer=footer
+      }
+      setContents(content){
+        this.props.content=content
+      }
+      setHeader(header){
+        this.props.header=header
+      }
       return {
         header: <Header/>
         content: "This is a property"
