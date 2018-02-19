@@ -10,6 +10,7 @@ If you are a Windows user and you wish to use Chrome, please download at https:/
 
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
+At the same time, you should follow those steps to install.
 ###### Chromium:
 > sudo apt-get install chromium-browser
 
