@@ -28,7 +28,6 @@ function field(fields){
     }
   }
 }
-var argumentsOfDefintion=field(fields)
 var fields = class{
   constructor(){
     var onlyField=fieldPlus("Logs")
@@ -47,6 +46,7 @@ var fields = class{
   }
 }
 console.log(fields)
+var argumentsOfDefintion=field(fields)
 var getMaster = class{
   constructor(){
     var plus="This is a property"
@@ -109,6 +109,9 @@ class user{
   setSettingLogs(settingLogs){
     this.settingLogs=settingLogs
   }
+  toString(){
+    return this.contents
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
@@ -153,6 +156,8 @@ function callNewLogs(func){
   console.log(func)
 }
 callNewLogs(newLogs)
-document.write("<h3>"+newLogs+"\n"+"Objects"+"</h3>")
+document.write(
+  "<h3>"+newLogs+"\n"+"Objects"+"</h3>"
+)
 newLogs.writeLogs(user.contents)
 getNewLogs()
