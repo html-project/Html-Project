@@ -100,6 +100,9 @@ var getMaster = class{
 }
 console.log(getMaster)
 class user{
+  constructor(){
+    this.userLogs=null
+  }
   setContents(contents){
     this.contents=contents
   }
@@ -116,15 +119,17 @@ class user{
 var users=new user()
 user.contents=[1, 2, 3]
 user.settingLogs="contents: "+[1, 2, 3]
+user.userLogs=user.toString()
 user.logs="none"
 function getNewLogs(){
   var logs={
-    settingLogs: user.settingLogs,
-    logs: user.logs,
+    settingLogs: users.settingLogs,
+    logs: users.logs,
     property: class{
       constructor(){
-        var logs=user.logs
-        var settingLogs=user.settingLogs
+        var logs=users.logs
+        var settingLogs=users.settingLogs
+        var userLogs=users.userLogs
       }
     }
   }
@@ -138,9 +143,9 @@ var newLogs={
     content.forEach(contents =>{
       var course=class{
         constructor(){
-          this.contents=user.contents
-          this.settingLogs=user.settingLogs
-          this.logs=user.logs
+          this.contents=users.contents
+          this.settingLogs=users.settingLogs
+          this.logs=users.logs
           var userSettingLogs=getSettingLogs()
           console.log(userSettingLogs)
         }

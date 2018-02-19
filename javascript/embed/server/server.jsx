@@ -1,6 +1,10 @@
 var functions={
   class: function(){
-    console.log("localhost:3000 is the server")
+    return (
+      <div>
+        <input type="button" value="hello">
+      </div>
+    )
   }
 }
 console.log(functions+" Don't road station")

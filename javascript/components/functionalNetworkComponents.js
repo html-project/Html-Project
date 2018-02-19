@@ -1,3 +1,21 @@
+class preferedEvent{
+  constructor(model, component){
+    this.model=model
+    this.components=this.model+component
+  }
+  preventSyntax(){
+    this.model="Prevented model: "+model
+    var components=this.model+[1, 2, 3]
+    insertComponents(this.components)
+  }
+  insertComponents(event){
+    event.preventDefault()
+    var components=$('#body').val()
+  }
+  toString(){
+    return this.model
+  }
+}
 var functioningDate={
   innerHTML: {
     combinePropertyValue: function(){
@@ -79,6 +97,8 @@ var functioningDate={
       this.declareFunction=function(){
         this.changes=functionsToDeclare
         this.declaredFunction=this.changes
+        var events=new preferedEvent()
+        events.preventSyntax()
       }
     })
   },
