@@ -1,0 +1,7 @@
+ language: python
+ env:
+   - R_LIBS_USER=~/R
+ install:
+   - sudo apt-add-repository -y ppa:marutter/rdev
+   - sudo apt-get update
+   - sudo apt-get install git
