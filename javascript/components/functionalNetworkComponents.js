@@ -3,14 +3,16 @@ class preferedEvent{
     this.model=model
     this.components=this.model+component
   }
-  preventSyntax(){
+  preventSyntax(eventSyntax){
+    insertComponents(eventSyntax)
     this.model="Prevented model: "+model
     var components=this.model+[1, 2, 3]
-    insertComponents(this.components)
+    this.components=components
   }
   insertComponents(event){
     event.preventDefault()
-    var components=$('#body').val()
+    this.component=$('#body').val()
+    console.log("he")
   }
   toString(){
     return this.model
@@ -97,14 +99,16 @@ var functioningDate={
       this.declareFunction=function(){
         this.changes=functionsToDeclare
         this.declaredFunction=this.changes
-        var events=new preferedEvent()
-        events.preventSyntax()
+        var events=new preferedEvent(this.changes, this.declaredFunction)
+        if (this.changes==this.declaredFunction){
+          events.preventSyntax({insert: events.insertComponents() })
+        }
       }
     })
   },
   propertyValueDefine: function(bar){
     this.bar=bar
-    console.log(bar)
+    console.debug(bar)
   }
 }
 functioningDate.propertyValueDefine(
