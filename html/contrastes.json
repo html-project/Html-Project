@@ -4,5 +4,9 @@
 "setAttributes": {
   "attributeFunctions": false,
   "attributeStatements": false,
-  "getServerAttributes": false
+  "getServerAttributes": false,
+  "attributes": {
+    "getFunction": true,
+    "getStatements": false
+  }
 }
