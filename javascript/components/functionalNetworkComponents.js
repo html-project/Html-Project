@@ -101,6 +101,13 @@ var functioningDate={
         var events=new preferedEvent(this.changes, this.declaredFunction)
         if (this.changes==this.declaredFunction){
           events.preventSyntax({insert: events.insertComponents() })
+        }else{
+          this.changed=this.declaredFunction
+          events.preventSyntax({
+            insert: function(){
+              events.insertComponents()
+            }
+          })
         }
       }
     })
