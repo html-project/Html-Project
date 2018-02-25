@@ -1,3 +1,5 @@
+var topWindow=window.top
+var centerWindow=window.center
 function field(fields){
   if (fields != ""){
     return fields
@@ -37,8 +39,9 @@ var fields = class{
     if (!this.numberField){
       var logger=masterField
       this.numberField=logger
+    }else{
+      return this.numberField
     }
-    return this.numberField
   }
   fieldMinus(field){
     this.numberField=field
@@ -62,6 +65,13 @@ var getMaster = class{
         this.variable=variable+this.enterRoadStation
         var master=this.enterRoadStation
         console.log(master+this.variable)
+        this.masterProjects=this.enterRoadStation+this.variable
+      },
+      getEnterRoadStation: function(){
+        return this.enterRoadStation
+      },
+      setEnterRoadStation: function(enterRoadStation){
+        this.enterRoadStation=enterRoadStation
       }
     }
     var field=master
@@ -119,6 +129,23 @@ class user{
 var users=new user()
 user.contents=[1, 2, 3]
 user.settingLogs="contents: "+[1, 2, 3]
+user.briefLogs=[{
+  getString: function(){
+    return this.string
+  },
+  setString: function(string){
+    this.string={
+      string: string,
+      convertToString: function(){
+        if(this.string){
+          return this.string
+        }else{
+          this.string=string
+        }
+      }
+    }
+  }
+}]
 user.userLogs=user.toString()
 user.logs="none"
 function getNewLogs(){
@@ -127,19 +154,48 @@ function getNewLogs(){
     logs: users.logs,
     property: class{
       constructor(){
-        var logs=users.logs
-        var settingLogs=users.settingLogs
-        var userLogs=users.userLogs
+        this.logs=user.logs
+        this.settingLogs=user.settingLogs
+        this.userLogs=user.userLogs
+      }
+      getLogs(){
+        return this.logs
+      }
+      setLogs(logs){
+        this.logs=logs
+      }
+      getSettingLogs(){
+        return this.settingLogs
+      }
+      setSettingLogs(settingLogs){
+        this.settingLogs=settingLogs
+      }
+      getUserLogs(){
+        return this.userLogs
+      }
+      setUserLogs(userLogs){
+        this.userLogs=userLogs
       }
     }
   }
   console.log(logs.property)
 }
 var newLogs={
+  string: {
+    string: function user(logProperty){
+      if (!this.property){
+        this.property=[{
+          properties: logProperty
+        }]
+      }
+      return this.property
+    },
+    property: [1, 2, 3, 4]
+  },
   content: user.contents,
   userLogs: user.settingLogs,
   writeLogs: function(content){
-    var content=[1, 2, 3]
+    var content=user.contents
     content.forEach(contents =>{
       var course=class{
         constructor(){
@@ -148,9 +204,13 @@ var newLogs={
           this.logs=users.logs
           var userSettingLogs=getSettingLogs()
           console.log(userSettingLogs)
+          setSettingLogs(this.contents, this.logs)
         }
         getSettingLogs(){
           return this.settingLogs
+        }
+        setSettingLogs(log, define){
+          this.settingLogs=log+define
         }
       }
       console.log("User contents: "+course)
@@ -160,9 +220,10 @@ var newLogs={
 function callNewLogs(func){
   console.log(func)
 }
+var properties=newLogs.string.string([1, 2, 3, 4])
 callNewLogs(newLogs)
 document.write(
-  "<h3>"+newLogs+"\n"+"Objects"+"</h3>"
+  "<h3>"+newLogs+"\n"+"Objects: "+"</h3>"+properties
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()

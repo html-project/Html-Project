@@ -5,6 +5,11 @@
     "DataProcessing": false,
     "DataProcessesed": true,
     "DataBegins": false
+  },
+  "AttributeAdditions": {
+    "addBounds": true,
+    "modifyBounds": true,
+    "moveBounds": true,
   }
 }
 "bounds": false
