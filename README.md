@@ -62,8 +62,7 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
-*****Note:***** *This is a unstable mode of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the stable version.*
-
+*****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change you end command from "google-chrome-unstable" to "google-chrome-stable".*
 
 If you have problems, please fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
 
