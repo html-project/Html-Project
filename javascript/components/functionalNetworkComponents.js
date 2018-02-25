@@ -12,7 +12,6 @@ class preferedEvent{
   insertComponents(event){
     event.preventDefault()
     this.component=$('#body').val()
-    console.log("he")
   }
   toString(){
     return this.model
