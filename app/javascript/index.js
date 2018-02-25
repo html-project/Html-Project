@@ -2,12 +2,20 @@
 var index=new InsertPosts();
 index.allow({
   remove: function(){
-    return true;
+    if (index.content.exists() ){
+      return true;
+    }else{
+      return false;
+    }
   }
   add: function(){
     return true;
   }
   change: function(){
-    return false;
+    if (index.content.exists() ){
+      return true;
+    }else{
+      return false;
+    };
   }
 });
