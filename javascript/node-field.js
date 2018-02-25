@@ -26,9 +26,34 @@ var projects={
   }
 }
 var newProjects={
-  stations: [1, 2, 4],
+  stations: null,
+  setStationValue: function(stationValue){
+    this.stations=stationValue
+  },
   getStationValue: function(){
     return this.stations
   }
 }
 projects.setStations("1, 2, 3, 4")
+newProjects.setStationValue(projects.getStations() )
+var stationValue={
+  stationValue: newProjects.getStationValue(),
+  setStationValue: function(stationValue){
+    this.stationValue=stationValue
+  }
+}
+stationValue.setStationValue([{
+  stationValues: projects.getStations(),
+  setStationValues: function(stations){
+    this.stationValues=stations
+  }
+}])
+var values=stationValue.stationValue
+function printValues(value){
+  if (value != null){
+    console.log(value)
+  }else{
+    console.log(projects.getStations() )
+  }
+}
+printValues(values)
