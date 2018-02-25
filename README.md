@@ -64,7 +64,7 @@ EOF
 
 *****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change you end command from "google-chrome-unstable" to "google-chrome-stable".*
 
-If you have problems, please fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
+If you have problems, please fallback to Xorg with modifying the **/etc/gdm/custom.conf** file on your computer:
 
 > $$ GDM configuration storage
 >
@@ -77,7 +77,7 @@ If you have problems, please fallback to Xorg with modifying **/etc/gdm/custom.c
 > [security]
 > ...
 
-If you are a Linux user and wish to use firefox browser, please open on the launcher, or please type the following command:
+If you are a Linux user and wish to use the Firefox browser, please open on the launcher (the browser is automatically installed when you installing your computer), or please type the following command:
 
 > firefox
 
