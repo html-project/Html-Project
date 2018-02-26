@@ -193,7 +193,13 @@ var newLogs={
     string: function user(logProperty){
       if (!this.property){
         this.property=[{
-          properties: logProperty
+          properties: logProperty,
+          getProperties: function(){
+            return this.properties
+          },
+          setProperties: function(properties){
+            this.properties=properties
+          }
         }]
       }
       return this.property
