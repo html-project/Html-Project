@@ -5,6 +5,7 @@ class EbbedDate{
   }
   consDating(datingFunc){
     if (datingFunc != ""){
+<<<<<<< HEAD
       var element=this.datingFunction
       var dates="ebbedFunction != new Date()"+this.datingFunction+{
         expected: function(){
@@ -17,6 +18,9 @@ class EbbedDate{
         }
       }
       dates.expected()
+=======
+      var element=this.datingFunction;
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
     }
   }
 }
