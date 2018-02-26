@@ -215,7 +215,11 @@ var newLogs={
           setSettingLogs(this.contents, this.logs)
         }
         getSettingLogs(){
-          return this.settingLogs
+          if (!this.settingLogs){
+            setSettingLogs(this.contents, this.logs)
+          }else{
+            return this.settingLogs
+          }
         }
         setSettingLogs(log, define){
           this.settingLogs=log+define
