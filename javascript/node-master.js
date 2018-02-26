@@ -159,19 +159,25 @@ function getNewLogs(){
         this.userLogs=user.userLogs
       }
       getLogs(){
-        return this.logs
+        if (this.logs){
+          return this.logs
+        }
       }
       setLogs(logs){
         this.logs=logs
       }
       getSettingLogs(){
-        return this.settingLogs
+        if (this.settingLogs){
+          return this.settingLogs
+        }
       }
       setSettingLogs(settingLogs){
         this.settingLogs=settingLogs
       }
       getUserLogs(){
-        return this.userLogs
+        if (this.userLogs){
+          return this.userLogs
+        }
       }
       setUserLogs(userLogs){
         this.userLogs=userLogs
@@ -213,7 +219,7 @@ var newLogs={
           this.settingLogs=log+define
         }
       }
-      console.log("User contents: "+course)
+      console.log("%c User contents: "+course, 'color: #00FFFF')
     })
   }
 }
