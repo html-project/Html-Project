@@ -5,14 +5,20 @@
     "DataProcessing": false,
     "DataProcessesed": true,
     "DataBegins": false
+<<<<<<< HEAD
   },
   "AttributeAdditions": {
     "addBounds": true,
     "modifyBounds": true,
     "moveBounds": true,
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
   }
 }
 "bounds": false
 "processedBounds": true
+<<<<<<< HEAD
 "processingBounds": false
 "changeVarBounds": false
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05

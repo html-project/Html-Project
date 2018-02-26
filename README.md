@@ -5,11 +5,16 @@ A HTML program that runs browser Firefox and Chrome.
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer.
 
+<<<<<<< HEAD
 If you are a Windows user and you wish to use Chrome, please download at the offical website: https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3ZRscl36196s79SA9Qgkihl1OvjPRVWdvsasyAZLOlF637QIePSpEaAugBEALw_wcB. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
+=======
+If you are a Windows user and you wish to use Chrome, please download at https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3ZRscl36196s79SA9Qgkihl1OvjPRVWdvsasyAZLOlF637QIePSpEaAugBEALw_wcB. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 
 
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
+<<<<<<< HEAD
 At the same time, you should follow those steps to install.
 ###### Chromium:
 Installation:
@@ -17,12 +22,19 @@ Installation:
 
 ###### Chrome:
 Installation:
+=======
+###### Chromium:
+> sudo apt-get install chromium-browser
+
+###### Chrome:
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 > sudo apt-get install libxss1 libappindicator1 libindicator7
 >
 > wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 >
 > sudo dpkg -i google-chrome*.deb
 
+<<<<<<< HEAD
 If you have error messages while you installing with this command, please run:
 
 > sudo apt-get install -f
@@ -32,6 +44,16 @@ Then you can re-run this:
 > sudo dpkg -i google-chrome*.deb
 
 Or please install forks browser.
+=======
+If you have error messages while you installing it, please run:
+
+> sudo apt-get install -f
+
+Then re-run this:
+
+> sudo dpkg -i google-chrome*.deb
+
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 #### Suse/Opensuse:
 > wget https://dl.google.com/linux/linux_signing_key.pub
 >
@@ -39,17 +61,26 @@ Or please install forks browser.
 
 64 bit:
 > sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/x86_64 google
+<<<<<<< HEAD
 >
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 > sudo zypper in google-chrome-stable
 
 32 bit:
 > sudo zypper ar http://dl.google.com/linux/chrome/rpm/stable/i386 google
+<<<<<<< HEAD
 >
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 > sudo zypper in  google-chrome-stable
 
 #### Fedora/Cent OS/RHEL:
 > sudo -i
+<<<<<<< HEAD
 >
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 > cat << EOF > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome - \$basearch
@@ -65,9 +96,13 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
+<<<<<<< HEAD
 *****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change you end command from "google-chrome-unstable" to "google-chrome-stable".*
 
 If you have problems, please fallback to Xorg with modifying the **/etc/gdm/custom.conf** file on your computer:
+=======
+If you have problems, then fallback to Xorg with modifying **/etc/gdm/custom.conf** file:
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 
 > $$ GDM configuration storage
 >
@@ -80,6 +115,7 @@ If you have problems, please fallback to Xorg with modifying the **/etc/gdm/cust
 > [security]
 > ...
 
+<<<<<<< HEAD
 If you are a Linux user and wish to use the Firefox browser, please open on the launcher (the browser is automatically installed when you installing your computer), or please type the following command:
 
 > firefox
@@ -91,3 +127,10 @@ or:
 > firefox
 
 Please sure to be use the local testing server to the port 3000 (localhost:3000/): https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+=======
+If you are a Linux use and wish to use firefox browser, please open on the launcher, or please type the following command:
+
+> firefox
+
+Please sure to be use the python localhost: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05

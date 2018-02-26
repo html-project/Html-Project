@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class preferedEvent{
   constructor(model, component){
     this.model=model
@@ -17,6 +18,8 @@ class preferedEvent{
     return this.model
   }
 }
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 var functioningDate={
   innerHTML: {
     combinePropertyValue: function(){

@@ -26,15 +26,20 @@ var projects={
   }
 }
 var newProjects={
+<<<<<<< HEAD
   stations: null,
   setStationValue: function(stationValue){
     this.stations=stationValue
   },
+=======
+  stations: [1, 2, 4],
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
   getStationValue: function(){
     return this.stations
   }
 }
 projects.setStations("1, 2, 3, 4")
+<<<<<<< HEAD
 newProjects.setStationValue(projects.getStations() )
 var stationValue={
   stationValue: newProjects.getStationValue(),
@@ -57,3 +62,5 @@ function printValues(value){
   }
 }
 printValues(values)
+=======
+>>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
