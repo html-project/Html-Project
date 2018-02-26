@@ -216,13 +216,29 @@ var newLogs={
         }
         getSettingLogs(){
           if (!this.settingLogs){
+            this.userContents=user.contents
+            this.userLogs=user.logs
+            this.userBriefLogs=user.briefLogs
             setSettingLogs(this.contents, this.logs)
           }else{
+            this.briefLogs=user.briefLogs
             return this.settingLogs
           }
         }
         setSettingLogs(log, define){
           this.settingLogs=log+define
+        }
+        setProperty(logs){
+          var accessor={
+            model: user.briefLogs,
+            getModel: function(){
+              return this.model
+            },
+            setModel: function(models){
+              this.model=models
+            }
+          }
+          console.log(accessor+logs)
         }
       }
       console.log("%c User contents: "+course, 'color: #00FFFF')
