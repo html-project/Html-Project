@@ -3,14 +3,10 @@
 "attributeMasteringes": false
 "setAttributes": {
   "attributeFunctions": false,
-<<<<<<< HEAD
   "attributeStatements": false,
   "getServerAttributes": false,
   "attributes": {
     "getFunction": true,
     "getStatements": false
   }
-=======
-  "attributeStatements": false
->>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
 }

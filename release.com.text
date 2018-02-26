@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 release: 0.9.6
 "Made some changes"
 "{
@@ -33,6 +32,3 @@ return (
   </body>
   <input type="btn btn-info">
 </html>
-=======
-0.9.6
->>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
