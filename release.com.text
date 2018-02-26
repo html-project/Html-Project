@@ -1,2 +1,5 @@
 release: 0.9.6
 "Made some changes"
+"{
+delete return;
+}"
