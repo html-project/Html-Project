@@ -169,6 +169,8 @@ function getNewLogs(){
       getSettingLogs(){
         if (this.settingLogs){
           return this.settingLogs
+        }else{
+          this.settingLogs=[1, 2, 3]
         }
       }
       setSettingLogs(settingLogs){

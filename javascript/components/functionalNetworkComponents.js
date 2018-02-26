@@ -82,6 +82,7 @@ var functioningDate={
             }
           }
         }
+        console.log(classToFunction)
       }
     }
   },
