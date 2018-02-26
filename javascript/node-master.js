@@ -111,7 +111,7 @@ var getMaster = class{
 console.log(getMaster)
 class user{
   constructor(){
-    this.userLogs=null
+    this.userLogs=getMaster
   }
   setContents(contents){
     this.contents=contents
@@ -188,6 +188,7 @@ function getNewLogs(){
   }
   console.log(logs.property)
 }
+event=new user()
 var newLogs={
   string: {
     string: function user(logProperty){
@@ -204,7 +205,23 @@ var newLogs={
       }
       return this.property
     },
-    property: [1, 2, 3, 4]
+    property: [1, 2, 3, 4],
+    array: {
+      content: null,
+      getContent: function(){
+        if (!this.content){
+          if ($('#body').val() != null){
+            this.content=$('#body').val()
+          }else{
+            this.content=event
+          }
+        }
+        return this.content
+      },
+      setContent: function(content){
+        this.content=content
+      }
+    }
   },
   content: user.contents,
   userLogs: user.settingLogs,
@@ -254,10 +271,11 @@ var newLogs={
 function callNewLogs(func){
   console.log(func)
 }
+newLogs.string.array.setContent(event)
 var properties=newLogs.string.string([1, 2, 3, 4])
 callNewLogs(newLogs)
 document.write(
-  "<h3>"+newLogs+"\n"+"Objects: "+"</h3>"+properties
+  "<h3>"+newLogs+"\n"+"Objects: "+"</h3><p>"+properties+":"+user.contents+"</p>"
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()
