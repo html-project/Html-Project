@@ -92,4 +92,13 @@ or:
 >
 > firefox
 
-Please sure to be use the local testing server to the port 3000 (localhost:3000/): https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+Please sure to be use the local testing server to the port 3000 (localhost:3000/): https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server. If you don't setup a local testing server, you should add *your file usage* to your computer and follow those steps:
+#### Linux/macOS:
+Type on your browser's search text area:
+> file:///
+
+Just click it to *html_project-master* (inside the "html" folder), then click "node-master.html". 
+#### Windows:
+See where is your HTML file. -->
+
+Click right on your mouse then just click **Open**.
