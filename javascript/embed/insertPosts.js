@@ -30,7 +30,4 @@ function importModule(){
   functioning.setUserModule([1, 2])
   var modules=functioning.getModule
 }
-<<<<<<< HEAD
 importModule()
-=======
->>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05

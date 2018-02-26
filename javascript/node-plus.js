@@ -5,7 +5,6 @@ var plus=class{
     }else{
       var structure="waring"
       return structure
-<<<<<<< HEAD
     }
     this.model="waringTwo"
   }
@@ -33,20 +32,11 @@ var plus=class{
           }
         }
       }
-=======
->>>>>>> eef8a6c11e60fe892f193f53caf92a7932f37a05
     }
     return this.plus
   }
   setPlus(model){
     this.plus=model
-  }
-  waring(){
-    var masterWaring=this.setPlus(this.plus)
-    var waring=this.getPlus()
-    this.garble=masterWaring
-    this.waring=waring
-    this.toPlusSet=this.waring+this.garble
   }
 }
 function callPlus(){
