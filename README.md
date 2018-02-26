@@ -31,7 +31,9 @@ Then you can re-run this:
 
 > sudo dpkg -i google-chrome*.deb
 
-Or please install forks browser.
+Or please install forks browser by typing that:
+
+> forks install chrome-browser
 #### Suse/Opensuse:
 > wget https://dl.google.com/linux/linux_signing_key.pub
 >
