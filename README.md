@@ -8,7 +8,7 @@ While some features is supported for Firefox and Chrome, but it is not supported
 If you are a Windows user and you wish to use Chrome, please download at the offical website: https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3ZRscl36196s79SA9Qgkihl1OvjPRVWdvsasyAZLOlF637QIePSpEaAugBEALw_wcB. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
 
 Screenshot:
-[alt text](1.png)
+![alt text](1.png)
 
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
