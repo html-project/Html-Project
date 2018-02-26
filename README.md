@@ -12,9 +12,11 @@ If you are a Linux user and wish to use Chrome, please follow the following step
 #### Debian/Ubuntu:
 At the same time, you should follow those steps to install.
 ###### Chromium:
+Installation:
 > sudo apt-get install chromium-browser
 
 ###### Chrome:
+Installation:
 > sudo apt-get install libxss1 libappindicator1 libindicator7
 >
 > wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
