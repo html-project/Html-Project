@@ -40,6 +40,7 @@ var plus=class{
   }
 }
 function callPlus(){
+  users.model=plus
   console.log(plus)
 }
 callPlus()
