@@ -313,19 +313,36 @@ var newLogs={
         }
         setProperty(logs){
           var accessor={
-            briefMixins: user.toString(),
+            briefModels: undefined,
+            briefLogs: user.toString(),
             model: user.briefLogs,
             getModel: function(){
+              if (!this.model){
+                this.briefModels=[0]
+                setModel(this.briefModels)
+              }else{
+                if (!this.briefModels){
+                  this.access=this.model
+                }else{
+                  this.access=this.briefModels
+                }
+              }
               return this.model
             },
             setModel: function(models){
               this.model=models
             },
             setBriefLogs: function(log){
-              this.briefMixins=log
+              this.briefLogs=log
             },
             getBriefLogs: function(){
               return this.briefLogs
+            },
+            getBriefModels: function(){
+              return this.briefModels
+            },
+            setBriefModels: function(briefModel){
+              this.briefModels=briefModel
             }
           }
           console.log(accessor+logs)
@@ -342,7 +359,7 @@ newLogs.string.array.setContent(event)
 var properties=newLogs.string.string([1, 2, 3, 4])
 callNewLogs(newLogs)
 document.write(
-  "<h3>"+newLogs+"\n"+"Objects: "+"</h3><p>"+properties+":"+user.contents+"</p>"
+  "<h3>"+newLogs+"\n"+"Objects: "+"</h3>"+"<font size='1'><p>"+properties+":"+user.contents+"</p></font>"
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()

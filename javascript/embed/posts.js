@@ -1,3 +1,4 @@
+var exportingPosts={addedPosts: undefined}
 class posts{
   constructor(){
     this.contents=[1]
@@ -47,3 +48,10 @@ function modules(){
   }
 }
 modules()
+var eachPost=new posts()
+if (!posts.content){
+  posts.content=posts.contents
+}else{
+  exportingPosts.addedPosts=posts.contents
+  document.write("<!--<font size='2'>You might be have looking for: <a href='http://www.localhost8000.com' style='color: rgb(255, 128,0)'>localhost:8000</a></font>-->")
+}
