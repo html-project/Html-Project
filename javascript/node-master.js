@@ -354,8 +354,17 @@ if (newLogs.string.property != [1, 2, 3]){
     },
     setMaster: function(masterFunc){
       this.master=masterFunc
+    },
+    passMixin: function(event){
+      event.preventDefault({
+        mixins: getMaster,
+        getData(){
+          return this.mixins
+        }
+      })
     }
   })
+  newLogs.string.getMixins([1, 2, 3, 4]).passMixin(event)
   var mixin={mixins: newLogs.string.getMixins([1, 2, 3, 4]).getMaster()}
   variables.setMixins(mixin)
   newLogs.passMixinsToPosts(new user() )
