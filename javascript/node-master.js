@@ -109,9 +109,24 @@ var getMaster = class{
   }
 }
 console.log(getMaster)
+var variables={
+  mixins: null,
+  getMixins: function(){
+    return this.mixins
+  },
+  setMixins: function(mixin){
+    this.mixins=mixin
+  }
+}
 class user{
   constructor(){
     this.userLogs=getMaster
+  }
+  setDefaultOption(mixin, option){
+    if (!this.defaultMixins){
+      this.defaultMixins=mixin
+    }
+    this.defaultOption=option
   }
   setContents(contents){
     this.contents=contents
@@ -124,6 +139,14 @@ class user{
   }
   toString(){
     return this.contents
+  }
+  preventDefault(option){
+    if (!this.mixins){
+      this.mixins=getMaster
+    }else{
+      this.defaultMixins=this.mixins
+    }
+    this.setDefaultOption(this.mixins, option)
   }
 }
 var users=new user()
@@ -190,6 +213,17 @@ function getNewLogs(){
 }
 event=new user()
 var newLogs={
+  passMixinsToPosts(event){
+    event.preventDefault({
+      constructor(mixin){
+        this.events=event+mixin
+      }
+    })
+    this.events=event
+  },
+  getEvents(){
+    return this.events
+  },
   string: {
     string: function user(logProperty){
       if (!this.property){
@@ -207,6 +241,7 @@ var newLogs={
     },
     property: [1, 2, 3, 4],
     array: {
+      mixins: null,
       content: null,
       getContent: function(){
         if (!this.content){
@@ -221,6 +256,16 @@ var newLogs={
       setContent: function(content){
         this.content=content
       }
+    },
+    getMixins: function(property){
+      if (!this.mixins){
+        var contents=getMaster
+        this.mixins=contents+"\n"+property
+      }
+      return this.mixins
+    },
+    setMixins: function(mixins){
+      this.mixins=mixins
     }
   },
   content: user.contents,
@@ -279,3 +324,14 @@ document.write(
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()
+if (newLogs.string.property != [1, 2, 3]){
+  newLogs.string.setMixins(getMaster)
+  var mixin={mixins: newLogs.string.getMixins(newLogs.string.property)}
+  variables.setMixins(mixin)
+  newLogs.passMixinsToPosts(new user() )
+}else{
+  newLogs.string.setMixins(getMaster)
+  var mixin={mixins: newLogs.string.getMixins([1, 2, 3, 4])}
+  variables.setMixins(mixin)
+  newLogs.passMixinsToPosts(new user() )
+}
