@@ -25,7 +25,9 @@ var functioningDate={
         this.syntaxValues=syntaxes
         this.functionMastering=class{
           constructor(){
-            this.mastering="mastering"+syntaxes
+            if (!this.mastering){
+              this.mastering="mastering"+syntaxes
+            }
             returnValues(this.mastering)
           }
           returnValues(mastering){
