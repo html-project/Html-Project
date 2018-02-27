@@ -73,6 +73,25 @@ function printValues(value){
     console.log(value)
   }else{
     if (stationValue.getStationValue() ){
+      var variable=stationValue.getStationValue([0]).stationValues
+      projects.setStationValue({
+        splice: [{
+          pushin: function(){
+            return this.splices
+          },
+          splices: [0, 1]
+        }, {
+          addMixins: function(event){
+            event.preventDefault({
+              module: users.module
+            })
+            event.contain(users.module)
+          }
+        }],
+        insert: function(){
+          this.splices.push(stationValue.getStationValue())
+        }
+      })
       console.log(stationValue.getStationValue())
     }else{
       console.log(projects.getStations())

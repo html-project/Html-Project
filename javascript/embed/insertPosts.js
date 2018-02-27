@@ -20,6 +20,7 @@ function importModule(){
       contentsToImport.forEach(contentsToExport => {
         console.log("Importing functions: "+contentsToImport)
         inserts.setImportFunctions(contentsToImport)
+        inserts.importFunctions()
       })
     },
     getModule: function(){

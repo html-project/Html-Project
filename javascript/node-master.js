@@ -148,6 +148,19 @@ class user{
     }
     this.setDefaultOption(this.mixins, option)
   }
+  contain(mixin){
+    this.setDefaultOption(mixin, {
+      add: function(){
+        return true
+      },
+      change: function(){
+        return true
+      },
+      remove: function(){
+        return true
+      }
+    })
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
