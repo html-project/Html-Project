@@ -11,7 +11,13 @@ class preferedEvent{
   }
   insertComponents(event){
     event.preventDefault()
-    this.component=$('#body').val()
+    if ($('#post-body').val() != undefined){
+      this.component=$('#post-body', {
+        body: $('#post-body').val()
+      })
+    }else{
+      this.component=$('#body').val()
+    }
   }
   toString(){
     return this.model
