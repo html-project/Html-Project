@@ -313,12 +313,19 @@ var newLogs={
         }
         setProperty(logs){
           var accessor={
+            briefMixins: user.toString(),
             model: user.briefLogs,
             getModel: function(){
               return this.model
             },
             setModel: function(models){
               this.model=models
+            },
+            setBriefLogs: function(log){
+              this.briefMixins=log
+            },
+            getBriefLogs: function(){
+              return this.briefLogs
             }
           }
           console.log(accessor+logs)
