@@ -83,7 +83,13 @@ function printValues(value){
         }, {
           addMixins: function(event){
             event.preventDefault({
-              module: users.module
+              module: users.module,
+              setModule: function(modules){
+                this.module=modules
+              },
+              getModule: function(){
+                return this.module
+              }
             })
             event.contain(users.module)
           }
