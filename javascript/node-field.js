@@ -88,6 +88,9 @@ function printValues(value){
                 this.module=modules
               },
               getModule: function(){
+                if (!this.module){
+                  setModule([1, 2])
+                }
                 return this.module
               }
             })
