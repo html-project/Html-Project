@@ -373,6 +373,7 @@ if (newLogs.string.property != [1, 2, 3]){
   newLogs.passMixinsToPosts(new user() )
 }else{
   newLogs.string.setMixins({
+    mixin: null,
     master: getMaster,
     getMaster: function(){
       if (this.master){
@@ -382,11 +383,17 @@ if (newLogs.string.property != [1, 2, 3]){
     setMaster: function(masterFunc){
       this.master=masterFunc
     },
+    addMixins: function(mixins){
+      this.mixin=mixins
+    },
     passMixin: function(event){
       event.preventDefault({
         mixins: getMaster,
         getData(){
           return this.mixins
+        },
+        addMixin(){
+          newLogs.string.getMixins([1, 2, 3, 4]).addMixins(this.mixins)
         }
       })
       event.variableTest()
