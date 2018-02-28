@@ -7,6 +7,8 @@
   "getServerAttributes": false,
   "attributes": {
     "getFunction": true,
-    "getStatements": false
+    "getStatements": false,
+    "setFunction": true,
+    "setStatements": true
   }
 }
