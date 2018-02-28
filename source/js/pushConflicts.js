@@ -5,7 +5,7 @@ import ({
       return(
         <div form='insertPosts'>
           <InsertPosts/>
-          {this.props.posts()}
+          {this.props.container.posts()}
         </div>
       )
     }
