@@ -161,6 +161,9 @@ class user{
       }
     })
   }
+  variableTest(){
+    this.mixinDefaultOption=this.defaultOption
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
@@ -386,6 +389,7 @@ if (newLogs.string.property != [1, 2, 3]){
           return this.mixins
         }
       })
+      event.variableTest()
     }
   })
   newLogs.string.getMixins([1, 2, 3, 4]).passMixin(event)
