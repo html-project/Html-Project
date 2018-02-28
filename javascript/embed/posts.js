@@ -1,3 +1,15 @@
+var newProject={
+  modules: null,
+  getModules: function(){
+    return this.modules
+  },
+  setModules: function(modules){
+    this.modules=modules
+  }
+}
+newProject.setModules([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
+var log="This is a post insert to the resolver: "+newProject.getModules()+"."
+document.write("<script>function alertFunction(){console.log('"+log+"')} function alertAnotherFunction(){document.getElementById('myTextarea').value = ''; console.log('This post has been removed.')}</script><style>div {color: gray; background: #333;}</style><div class='gray'><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()''> Submit the changes</button><button type='reset' onclick='alertAnotherFunction()'>Defaulting this change </button></form></center></div>")
 var exportingPosts={addedPosts: undefined}
 class posts{
   constructor(){
