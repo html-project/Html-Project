@@ -5,7 +5,7 @@ A HTML program that runs browser Firefox and Chrome.
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer.
 
-If you are a Windows user and you wish to use Chrome, please download at the offical website: https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3ZRscl36196s79SA9Qgkihl1OvjPRVWdvsasyAZLOlF637QIePSpEaAugBEALw_wcB. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
+If you are a Windows user and you wish to use Chrome, please download at the offical website: https://www.google.com/chrome/. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
 
 Screenshot:
 ![alt text](1.png)
