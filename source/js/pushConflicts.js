@@ -4,7 +4,7 @@ import ({
     mixin(){
       return(
         <div form='insertPosts'>
-          <InsertPosts/>
+          {this.props.insertPosts()}
           {this.props.container.posts()}
         </div>
       )
