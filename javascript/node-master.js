@@ -164,6 +164,20 @@ class user{
   variableTest(){
     this.mixinDefaultOption=this.defaultOption
   }
+  insert(mixin){
+    this.props.insert(mixin)
+  }
+  setProps(){
+    this.props={
+      mixin: null,
+      insert(mixins){
+        this.mixin=mixins
+      },
+      getProps(){
+        return this.mixin
+      }
+    }
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
@@ -227,6 +241,7 @@ function getNewLogs(){
   }
   console.log(logs.property)
 }
+module=new user()
 event=new user()
 var newLogs={
   passMixinsToPosts(event){
@@ -271,6 +286,14 @@ var newLogs={
       },
       setContent: function(content){
         this.content=content
+      }
+    },
+    strings: {
+      insertToCollection(){
+        module.insert({
+          event: [event],
+          user: new user()
+        })
       }
     },
     getMixins: function(property){
