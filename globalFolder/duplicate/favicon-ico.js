@@ -11,6 +11,8 @@ module.register({
     this.eventDate=$('#post-date').val()
     if (this.eventDate){
       return this.eventDate
+    }else{
+      return [event]
     }
   }
 })
