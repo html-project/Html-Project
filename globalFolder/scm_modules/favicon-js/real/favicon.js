@@ -24,5 +24,11 @@ module.export('application-component', {this.props.component})
 module.export('class-component', {this.props.class})
 event.register('post-body', function(){
   var posts=[event.getData()]
-  return this.applicationComponent().setData()
+  return {this.applicationComponent({this.results.posts}, function(){
+    return (
+      {this.result.app({
+        data: {this.data.posts}
+      })}
+    )
+  }).setData()}
 })
