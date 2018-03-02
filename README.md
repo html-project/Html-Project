@@ -9,10 +9,10 @@ If you are a Windows user and you wish to use Chrome, please download at the off
 
 Screenshot:
 ![alt text](1.png)
-
+# Installation
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
-At the same time, you should follow those steps to install.
+Follow those steps to install:
 ###### Chromium:
 Installation:
 > sudo apt-get install chromium-browser
@@ -94,7 +94,7 @@ or:
 >
 > firefox
 
-**Usage: **
+# Usage
 
 Clone this repository: 
 > git clone https://github.com/zixuan75/html_project.git
