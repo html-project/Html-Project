@@ -9,7 +9,7 @@ var newProject={
 }
 newProject.setModules([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
 var log="This is a post insert to the resolver: "+newProject.getModules()
-document.write("<script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} function alertAnotherFunction(){document.getElementById('myTextarea').value = ''; }</script><style>div {color: gray; background: #333;}</style><div class='gray'><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()''> Submit the changes</button><button type='reset' onclick='alertAnotherFunction()'>Defaulting this change </button></form></center></div>")
+document.write("<script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} function alertAnotherFunction(){document.getElementById('myTextarea').innerHTML = ''; }</script><style>div {color: gray; background: #333;}</style><div class='gray'><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()''> Submit the changes</button><button type='reset' onclick='alertAnotherFunction()'>Defaulting this change </button></form></center></div>")
 var exportingPosts={addedPosts: undefined}
 class posts{
   constructor(){

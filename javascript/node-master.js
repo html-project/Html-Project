@@ -429,4 +429,11 @@ if (newLogs.string.property != [1, 2, 3]){
   var mixin={mixins: newLogs.string.getMixins([1, 2, 3, 4]).getMaster()}
   variables.setMixins(mixin)
   newLogs.passMixinsToPosts(new user() )
+  if (!this.props){
+    this.props={
+      configure: newLogs.string.getMixins([1, 2, 3, 4])
+    }
+  }else{
+    var config=this.props.configure
+  }
 }
