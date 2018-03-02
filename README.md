@@ -9,7 +9,8 @@ If you are a Windows user and you wish to use Chrome, please download at the off
 
 Screenshot:
 ![alt text](1.png)
-# Installation
+Follow these steps for installation:
+## Installation
 If you are a Linux user and wish to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
 Follow those steps to install:
@@ -93,13 +94,20 @@ or:
 > bash
 >
 > firefox
-
+Usage:
 # Usage
 
 Clone this repository: 
 > git clone https://github.com/zixuan75/html_project.git
 
-Please sure to be use the local testing server to the port 3000 (localhost:3000/): [Set up a local testing server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). If you don't setup a local testing server, you should add *your file usage* to your computer and follow those steps:
+Please sure to be use the local testing server to the port 3000 (localhost:3000/): [Set up a local testing server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server):
+
+#### Python 2
+> python -m SimpleHTTPServer 3000
+#### Python 3
+> python -m http.server 3000
+
+If you don't setup a local testing server, you should add *your file usage* to your computer and follow those steps:
 #### Linux/macOS:
 Type on your browser's search text area:
 > file:///
