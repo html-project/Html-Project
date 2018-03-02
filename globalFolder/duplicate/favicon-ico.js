@@ -1,7 +1,11 @@
 module.register({
   event: [event],
   getDate: function(){
-    return $('#post-date').val()
+    if (!$('#date').val() ){
+      return $('#post-date').val()
+    }else{
+      return $('#date').val()
+    }
   }
 })
 module.return({{
