@@ -417,6 +417,9 @@ if (newLogs.string.property != [1, 2, 3]){
         },
         addMixin(){
           newLogs.string.getMixins([1, 2, 3, 4]).addMixins(this.mixins)
+        },
+        getMaster(){
+          return newLogs.string.getMixins([1, 2, 3, 4]).getMaster()
         }
       })
       event.variableTest()
