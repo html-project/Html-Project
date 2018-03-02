@@ -6,6 +6,12 @@ module.register({
     }else{
       return $('#date').val()
     }
+  },
+  setDate: function(){
+    this.eventDate=$('#post-date').val()
+    if (this.eventDate){
+      return this.eventDate
+    }
   }
 })
 module.return({{
