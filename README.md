@@ -26,11 +26,11 @@ Installation:
 >
 > sudo dpkg -i google-chrome*.deb
 
-If you have error messages while you installing with this command, please run:
+If you have error messages while you installing with this command, please run this command:
 
 > sudo apt-get install -f
 
-Then you can re-run this:
+Then you can re-run this command:
 
 > sudo dpkg -i google-chrome*.deb
 
