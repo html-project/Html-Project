@@ -438,7 +438,7 @@ if (newLogs.string.property != [1, 2, 3]){
     if (this.props.configure){
       newLogs.string.getMixins([1, 2, 3, 4]).addMixins(this.props.configure)
     }else{
-      newLogs.string.setMixins(mixin)
+      newLogs.string.setMixins(mixin.mixins)
     }
   }
 }
