@@ -454,6 +454,9 @@ if (newLogs.string.property != [1, 2, 3]){
     }else{
       if (!newLogs.string.emptyConfigure){
         newLogs.string.setEmptyConfigure(this.props.configure)
+        this.props.configure=mixin.mixins
+      }else{
+        newLogs.string.emptyConfigure=undefined
       }
       newLogs.string.setMixins(mixin.mixins)
     }
