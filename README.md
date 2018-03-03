@@ -5,12 +5,12 @@ A HTML program that runs browser Firefox and Chrome.
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (you need to include with the repository: `git clone https://github.com/zixuan75/html_project.git`).
 
-If you are a Windows user and you wish to use Chrome, please download at the offical website: https://www.google.com/chrome/. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
+If you are a Windows user and you want to use Chrome, please download at the offical website: https://www.google.com/chrome/. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
 
 Screenshot:
 ![alt text](1.png)
 
-If you are a Linux user and wish to use Chrome, please follow the following steps:
+If you are a Linux user and want to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
 At the same time, you should follow those steps to install.
 ###### Chromium:
@@ -84,7 +84,7 @@ If you have problems, please fallback to Xorg with modifying the **/etc/gdm/cust
 > [security]
 > ...
 
-If you are a Linux user and wish to use the Firefox browser, please open on the launcher (the browser is automatically installed when you installing your computer), or please type the following command:
+If you are a Linux user and want to use the Firefox browser, please open on the launcher (the browser is automatically installed when you installing your computer), or please type the following command:
 
 > firefox
 
@@ -94,9 +94,9 @@ or:
 >
 > firefox
 
-**Usage: **
+**Usage:**
 
-Clone this repository: 
+Clone this repository:
 > git clone https://github.com/zixuan75/html_project.git
 
 Please sure to be use the local testing server to the port 3000 (localhost:3000/): [Set up a local testing server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). If you don't setup a local testing server, you should add *your file usage* to your computer and follow those steps:
@@ -104,7 +104,7 @@ Please sure to be use the local testing server to the port 3000 (localhost:3000/
 Type on your browser's search text area:
 > file:///
 
-Just click it to *html_project-master* (inside the "html" folder), then click "node-master.html". 
+Just click it to *html_project-master* (inside the "html" folder), then click "node-master.html".
 #### Windows:
 See where is your HTML file. -->
 
