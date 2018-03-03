@@ -11,7 +11,7 @@ Screenshot:
 ![alt text](1.png)
 Follow these steps for installation:
 ## Installation
-If you are a Linux user and wish to use Chrome, please follow the following steps:
+If you are a Linux user and want to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
 Follow those steps to install:
 ###### Chromium:
