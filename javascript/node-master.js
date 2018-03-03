@@ -307,6 +307,19 @@ var newLogs={
     },
     setMixins: function(mixins){
       this.mixins=mixins
+    },
+    setEmptyConfigure(configure){
+      if (configure == undefined){
+        this.emptyConfigure=configure
+      }
+    },
+    setConfigure(config){
+      if (configure != undefined){
+        this.configure=config
+      }
+    },
+    getConfigure(){
+      return this.configure
     }
   },
   content: user.contents,
@@ -436,8 +449,12 @@ if (newLogs.string.property != [1, 2, 3]){
   }else{
     var config=this.props.configure
     if (this.props.configure){
+      newLogs.string.setConfigure(this.props.configure)
       newLogs.string.getMixins([1, 2, 3, 4]).addMixins(this.props.configure)
     }else{
+      if (!newLogs.string.emptyConfigure){
+        newLogs.string.setEmptyConfigure(this.props.configure)
+      }
       newLogs.string.setMixins(mixin.mixins)
     }
   }
