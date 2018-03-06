@@ -458,7 +458,11 @@ if (newLogs.string.property != [1, 2, 3]){
       }else{
         newLogs.string.emptyConfigure=undefined
       }
-      newLogs.string.setMixins(mixin.mixins)
     }
+  }
+  if (mixin.mixins){
+    newLogs.string.setMixins(mixin.mixins)
+  }else{
+    newLogs.string.setMixins(getMaster)
   }
 }
