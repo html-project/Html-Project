@@ -457,6 +457,11 @@ if (newLogs.string.property != [1, 2, 3]){
         this.props.configure=mixin.mixins
       }else{
         newLogs.string.emptyConfigure=undefined
+        if (this.props.configure == newLogs.string.emptyConfigure){
+          this.props.configure=getMaster
+        }else{
+          newLogs.string.emptyConfigure=this.props.mixin
+        }
       }
     }
   }
