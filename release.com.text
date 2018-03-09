@@ -1,1 +1,36 @@
-0.9.6
+release: 0.9.6
+"Made some changes"
+"{
+delete return;
+}"
+
+"Made some changes"
+"{
+delete return;
+var class=class{constructor(){{this.useStrict}}};
+}"
+"Made some changes"
+"--css{
+  div{
+     width: 90px,
+     height: 150px
+  }
+}"
+"{
+'use strict';
+}"
+"Made some changes"
+"--jsx{
+return (
+  <input type="btn btn-info" onSubmit={this.useStrict}>
+)
+}"
+"--html{
+<html>
+  <body>
+     <input type="button" onclick="btn btn-info" onSubmit={this.useStrict}>
+  </body>
+  <input type="btn btn-info">
+</html>
+}"
+"Made some changes"

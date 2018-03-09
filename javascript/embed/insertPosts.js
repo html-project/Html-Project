@@ -20,14 +20,17 @@ function importModule(){
       contentsToImport.forEach(contentsToExport => {
         console.log("Importing functions: "+contentsToImport)
         inserts.setImportFunctions(contentsToImport)
+        inserts.importFunctions()
       })
     },
-    getModule: users.module,
+    getModule: function(){
+      return users.module
+    },
     setUserModule: function(moduleFunc){
       users.module=moduleFunc
     }
   }
   functioning.setUserModule([1, 2])
-  var modules=functioning.getModule
+  var modules=functioning.getModule()
 }
 importModule()

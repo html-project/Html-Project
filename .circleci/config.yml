@@ -19,4 +19,19 @@ jobs:
     steps:
       - checkout
 
-      - echo "hello my god."
+      - run: echo "hello world"
+  test:
+    docker: 
+      - image: circleci/node:7.10
+    working_directory: ~/repo
+    steps: 
+      - checkout
+      
+      - run: echo "hello this build step is to test this program using circleci"
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
+

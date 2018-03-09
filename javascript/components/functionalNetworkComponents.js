@@ -1,3 +1,28 @@
+class preferedEvent{
+  constructor(model, component){
+    this.model=model
+    this.components=this.model+component
+  }
+  preventSyntax(eventSyntax){
+    insertComponents(eventSyntax)
+    this.model="Prevented model: "+model
+    var components=this.model+[1, 2, 3]
+    this.components=components
+  }
+  insertComponents(event){
+    event.preventDefault()
+    if ($('#post-body').val() != undefined){
+      this.component=$('#post-body', {
+        body: $('#post-body').val()
+      })
+    }else{
+      this.component=$('#body').val()
+    }
+  }
+  toString(){
+    return this.model
+  }
+}
 var functioningDate={
   innerHTML: {
     combinePropertyValue: function(){
@@ -6,7 +31,9 @@ var functioningDate={
         this.syntaxValues=syntaxes
         this.functionMastering=class{
           constructor(){
-            this.mastering="mastering"+syntaxes
+            if (!this.mastering){
+              this.mastering="mastering"+syntaxes
+            }
             returnValues(this.mastering)
           }
           returnValues(mastering){
@@ -54,10 +81,16 @@ var functioningDate={
                 innerPropertyValue.value=[1, 3]
               }else{
                 innerPropertyValue.value=[1, 2]
+                this.valueOfInnerProperty=innerPropertyValue.value
               }
             })
+            if (contents != [1]){
+              this.valueContents=contents
+              this.contents=[1]
+            }
           }
         }
+        console.log(classToFunction)
       }
     }
   },
@@ -71,11 +104,26 @@ var functioningDate={
     var contents=[1]
     contents.forEach(content =>{
       console.log(functionsToDeclare)
+      this.declareFunction=function(){
+        this.changes=functionsToDeclare
+        this.declaredFunction=this.changes
+        var events=new preferedEvent(this.changes, this.declaredFunction)
+        if (this.changes==this.declaredFunction){
+          events.preventSyntax({insert: events.insertComponents() })
+        }else{
+          this.changed=this.declaredFunction
+          events.preventSyntax({
+            insert: function(){
+              events.insertComponents()
+            }
+          })
+        }
+      }
     })
   },
   propertyValueDefine: function(bar){
     this.bar=bar
-    console.log(bar)
+    console.debug(bar)
   }
 }
 functioningDate.propertyValueDefine(
