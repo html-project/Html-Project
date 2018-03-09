@@ -6,3 +6,4 @@ function hostingProblems(){
   console.log(github_branch+github_project)
 }
 hostingProblems()
+var jsx="../json.jsx.project"
