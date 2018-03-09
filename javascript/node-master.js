@@ -258,6 +258,13 @@ var newLogs={
     return this.events
   },
   string: {
+    users: null,
+    getUser: function(){
+      return this.users
+    },
+    setUser: function(user){
+      this.users=user
+    },
     string: function user(logProperty){
       if (!this.property){
         this.property=[{
@@ -475,6 +482,11 @@ if (newLogs.string.property != [1, 2, 3]){
     }
     newLogs.string.setMixins(mixin.mixins)
   }else{
-    newLogs.string.setMixins(getMaster)
+    var configure={
+      user: new user(),
+      master: getMaster
+    }
+    newLogs.string.setMixins(configure.master)
+    newLogs.string.setUser(configure.user)
   }
 }

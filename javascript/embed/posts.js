@@ -12,7 +12,7 @@ var log="This is a post insert to the resolver: "+newProject.getModules()
 function alertAnotherFunction(){
     document.getElementById('myTextarea').innerHTML = '';
 }
-document.write("<script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} </script><style>div {color: black; background: #333;}</style><div class='gray'><!-- Note: This tag is obsolete.--><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()'> Submit the changes</button></form><button onclick='alertAnotherFunction()'>Defaulting this change </button></center></div>")
+document.write("<script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} </script><style>div {color: black; background: #333;}</style><div class='gray'><!-- Note: This tag is obsolete.--><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='onclick=#'><button type='submit' onclick='alertFunction()'> Submit the changes</button></form>"+"<button type='reset' onClick='alertAnotherFunction()'>Defaulting this change </button></center></div>")
 var exportingPosts={addedPosts: undefined}
 if (document.getElementById('myTextarea').innerHTML){
   exportingPosts.addedPosts=document.getElementById('myTextarea').innerHTML
