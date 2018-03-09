@@ -55,7 +55,9 @@ var getMaster = class{
     var plus="This is a property"
     var master={
       property: function(){
-        var properties=[1, 2, 3]
+        var properties=[{
+          greeting: []
+        }, 1, 2, 3]
         properties.forEach(property =>{
           console.log(properties)
         })
