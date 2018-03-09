@@ -3,7 +3,7 @@
 # html_project
 A HTML program that runs browser Firefox and Chrome.
 
-While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (you need to include with this repository: `git clone https://github.com/zixuan75/html_project.git` to access your **repository** tag).
+While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (you need to clone this repository: `git clone https://github.com/zixuan75/html_project.git` to access your **repository** tag).
 
 If you are a Windows user and you want to use Chrome, please download at the offical website: https://www.google.com/chrome/. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
 
