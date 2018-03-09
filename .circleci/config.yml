@@ -19,4 +19,4 @@ jobs:
     steps:
       - checkout
 
-      - echo "hello!"
+      - echo "hello my god."
