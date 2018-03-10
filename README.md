@@ -116,3 +116,7 @@ Just click it to *html_project-master* (inside the "html" folder), then click "n
 See where is your HTML file. -->
 
 Click right on your mouse then just click **Open**.
+# Introduction
+This is the project page for this repository.
+
+Homepage: https://github.com/zixuan75/options
