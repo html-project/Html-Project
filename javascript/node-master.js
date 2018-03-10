@@ -506,8 +506,11 @@ if (newLogs.string.property != [1, 2, 3]){
   }
 }
 var yourCurrentPosts=null
+var veyor=null
 if (event){
+  veyor={event: [event]}
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
+  veyor={event: new user()}
   yourCurrentPosts={post: newLogs.content, event: new user()}
 }
