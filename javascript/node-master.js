@@ -511,6 +511,6 @@ if (event){
   veyor={event: [event]}
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
-  veyor={event: new user()}
+  veyor={event: [new user()]}
   yourCurrentPosts={post: newLogs.content, event: new user()}
 }
