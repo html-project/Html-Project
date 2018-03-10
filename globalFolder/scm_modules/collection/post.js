@@ -3,3 +3,12 @@ module.insert({
   event: [event],
   user: new user()
 })
+renderEvent('post-body', {
+  render(){
+    return new user()
+  }
+}).set('application', new WebApplicationComponent(), function(){
+  return (
+    {this.property.id}
+  )
+})
