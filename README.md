@@ -70,7 +70,7 @@ EOF
 ##### CentOS/RHEL 7.4
 > yum install google-chrome-unstable
 
-*****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change you end command from "google-chrome-unstable" to "google-chrome-stable".*
+*****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change your end of your command from "google-chrome-unstable" to "google-chrome-stable".*
 
 If you have problems, please fallback to Xorg with modifying the **/etc/gdm/custom.conf** file on your computer:
 
@@ -115,8 +115,10 @@ Just click it to *html_project-master* (inside the "html" folder), then click "n
 #### Windows:
 See where is your HTML file. -->
 
-Click right on your mouse then just click **Open**.
+Click right on your mouse then just click `Open`.
 # Introduction
 This is the project page for this repository.
 
 Homepage: https://github.com/zixuan75/options
+## Supplementary information
+The **html_project** (also known as **html-project**) is a JavaScript and HTML written program, able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file.
