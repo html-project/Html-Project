@@ -513,7 +513,8 @@ if (event){
   appVeyor={
     arrayEvent: [event],
     event: event,
-    mixins: getMaster //Events does not support AppVeyor
+    mixins: getMaster,
+    appVeyor: newLogs.content
   }
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
