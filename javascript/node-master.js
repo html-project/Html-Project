@@ -411,6 +411,7 @@ document.write(
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()
+var appVeyor=null
 if (newLogs.string.property != [1, 2, 3]){
   newLogs.string.setMixins(getMaster)
   var mixin={mixins: newLogs.string.getMixins(newLogs.string.property)}
@@ -509,6 +510,11 @@ var yourCurrentPosts=null
 var veyor=null
 if (event){
   veyor={event: [event]}
+  appVeyor={
+    arrayEvent: [event],
+    event: event,
+    mixins: getMaster //Events does not support AppVeyor
+  }
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
   veyor={event: [new user()]}
