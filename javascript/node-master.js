@@ -483,10 +483,31 @@ if (newLogs.string.property != [1, 2, 3]){
     newLogs.string.setMixins(mixin.mixins)
   }else{
     var configure={
+      mixin: [event],
+      passEvents: function(){
+        this.events=[event]
+        mixin.configures={
+          event: [event],
+          getUser(){
+            if (!event){
+              return new user()
+            }else{
+              return event
+            }
+          }
+        }
+      },
       user: new user(),
       master: getMaster
     }
     newLogs.string.setMixins(configure.master)
     newLogs.string.setUser(configure.user)
+    configure.passEvents()
   }
+}
+var yourCurrentPosts=null
+if (event){
+  yourCurrentPosts={post: newLogs.content, event: [event]}
+}else{
+  yourCurrentPosts={post: newLogs.content, event: new user()}
 }
