@@ -111,7 +111,7 @@ If you don't setup a local testing server, you should add *your file usage* to y
 Type on your browser's search text area:
 > file:///
 
-Just click it to *html_project-master* (inside the "html" folder), then click "node-master.html".
+Just click it to *html_project-master* (inside the "html" folder), then click `node-master.html`.
 #### Windows:
 See where is your HTML file. -->
 
@@ -121,4 +121,4 @@ This is the project page for this repository.
 
 Homepage: https://github.com/zixuan75/options
 ## Supplementary information
-The **html_project** (also known as **html-project**) is a JavaScript and HTML written program, able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file.
+The **html_project** (also known as **html-project**) is a JavaScript and HTML written program, able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file. If you have conflicting values of a JavaScript file within this program, you may forgot to setup a local testing server.
