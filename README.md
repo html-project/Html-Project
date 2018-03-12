@@ -121,4 +121,8 @@ This is the project page for this repository.
 
 Homepage: https://github.com/zixuan75/options
 ## Supplementary information
+<<<<<<< HEAD
 The **html_project** (also known as **html-project**) is a program written in HTML and JavaScript, able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file. If you have conflicting values of a JavaScript file within this program, you may forgot to setup a local testing server. `If there is a conflicting value on your program, you need to cleanup using a JavaScript collection file or make changes and run the Java file on the projects folder. If you don't want it, please open an issue in our project and just commit to change the Java file.`
+=======
+The **html_project** (also known as **html-project**) is a JavaScript and HTML written program, able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file. If you have conflicting values of a JavaScript file within this program, you may forgot to setup a local testing server. `If there is a conflicting value on your program, you need to cleanup using a JavaScript collection file or make changes and run the Java file on the projects folder. If you don't want it, please open an issue in our project and just commit to change the Java file.`
+>>>>>>> 159f0ab6a434ad19de96735e61292be08675f3ae
