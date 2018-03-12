@@ -180,6 +180,9 @@ class user{
       }
     }
   }
+  getProps(){
+    return this.props
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
@@ -253,7 +256,15 @@ var newLogs={
       }
     })
     this.events=event
+    setLogs()
+    event.getProps().insert({
+      event: [event],
+      user: [new user()]
+    })
   },
+  setLogs(){
+    event.setProps()
+  }
   getEvents(){
     return this.events
   },
