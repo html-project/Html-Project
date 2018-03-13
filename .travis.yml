@@ -7,5 +7,7 @@
  before-install:
    - sudo apt-get update
    - sudo apt-get install git-extras
+ before-script:
+   - git status
  script: 
    - echo "master project"
