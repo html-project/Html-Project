@@ -180,6 +180,9 @@ class user{
       }
     }
   }
+  getProps(){
+    return this.props
+  }
 }
 var users=new user()
 user.contents=[1, 2, 3]
@@ -253,7 +256,15 @@ var newLogs={
       }
     })
     this.events=event
+    setLogs()
+    event.getProps().insert({
+      event: [event],
+      user: [new user()]
+    })
   },
+  setLogs(){
+    event.setProps()
+  }
   getEvents(){
     return this.events
   },
@@ -333,6 +344,9 @@ var newLogs={
   },
   content: user.contents,
   userLogs: user.settingLogs,
+  addUser: function(id, checkLogs){
+    checkLogs(id)
+  },
   writeLogs: function(content){
     var content=user.contents
     content.forEach(contents =>{
@@ -362,7 +376,7 @@ var newLogs={
         setProperty(logs){
           var accessor={
             briefModels: undefined,
-            briefLogs: user.toString(),
+            briefLogs: null,
             model: user.briefLogs,
             getModel: function(){
               if (!this.model){
@@ -519,5 +533,19 @@ if (event){
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
   veyor={event: [new user()]}
+  appVeyor={arrayEvent: [new user()]}
   yourCurrentPosts={post: newLogs.content, event: new user()}
 }
+newLogs.addUser(veyor, function(appVeyors){
+  if (event){
+    appVeyors={
+      event: [event],
+      user: event
+    }
+  }else{
+    appVeyors={
+      event: [new user()],
+      user: new user()
+    }
+  }
+})
