@@ -121,5 +121,6 @@ Click right on your mouse then just click `Open`.
 This is the project page for this repository.
 
 The homepage is normal editing for the component of this description. Just also to release base searches: [homepage of this repository](https://github.com/zixuan75/options). Usually a homepage has a readme file and also don't have a contributing file (because anyone can contribute to the homepage repository), and there is allso a homepage of repository, for example, [vulhub's homepage](https://github.com/vulhub/vulhub-org).
+---
 ## Supplementary information
 The **html_project** (also known as **html-project**) is a program written in HTML and JavaScript, which is able to insert posts to the local testing server collection. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file. If you have conflicting values of a JavaScript file within this program, you may forgot to setup a local testing server. `If there is a conflicting value on your program, you need to cleanup using a JavaScript collection file or make changes and run the Java file on the projects folder. If you don't want it, please open an issue in our project and just commit to change the Java file.`
