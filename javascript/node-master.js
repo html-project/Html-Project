@@ -373,7 +373,7 @@ var newLogs={
         setProperty(logs){
           var accessor={
             briefModels: undefined,
-            briefLogs: user.toString(),
+            briefLogs: null,
             model: user.briefLogs,
             getModel: function(){
               if (!this.model){
