@@ -14,7 +14,10 @@ nodeMaster.createClass({
       })
     })
     return {
-      id: id
+      id: id,
+      getId: function(){
+        return this.id
+      }
     }
   )
 })
