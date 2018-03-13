@@ -17,6 +17,9 @@ nodeMaster.createClass({
       id: id,
       getId: function(){
         return this.id
+      },
+      setId: function(id){
+        this.id=id
       }
     }
   )

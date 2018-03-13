@@ -530,5 +530,6 @@ if (event){
   yourCurrentPosts={post: newLogs.content, event: [event]}
 }else{
   veyor={event: [new user()]}
+  appVeyor={arrayEvent: [new user()]}
   yourCurrentPosts={post: newLogs.content, event: new user()}
 }
