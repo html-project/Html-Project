@@ -344,6 +344,9 @@ var newLogs={
   },
   content: user.contents,
   userLogs: user.settingLogs,
+  addUser: function(id, checkLogs){
+    checkLogs(id)
+  },
   writeLogs: function(content){
     var content=user.contents
     content.forEach(contents =>{
@@ -533,3 +536,16 @@ if (event){
   appVeyor={arrayEvent: [new user()]}
   yourCurrentPosts={post: newLogs.content, event: new user()}
 }
+newLogs.addUser(veyor, function(appVeyors){
+  if (event){
+    appVeyors={
+      event: [event],
+      user: event
+    }
+  }else{
+    appVeyors={
+      event: [new user()],
+      user: new user()
+    }
+  }
+})
