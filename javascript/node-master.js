@@ -171,7 +171,7 @@ class user{
   }
   setProps(){
     this.props={
-      mixin: null,
+      mixin: "",
       insert(mixins){
         this.mixin=mixins
       },
@@ -179,9 +179,6 @@ class user{
         return this.mixin
       }
     }
-  }
-  getProps(){
-    return this.props
   }
 }
 var users=new user()
@@ -206,6 +203,51 @@ user.briefLogs=[{
 }]
 user.userLogs=user.toString()
 user.logs="none"
+user.setCollection=function(){
+  this.collections = class{
+    constructor(events, property){
+      this.event=events
+      this.property=property
+      this.preventInsert=function(propertyName){
+        ({
+          property: {event},
+          array: [event],
+          properties: [
+            {event},
+            this.event,
+            this.property,
+            function(){
+              this.mixinProperties=function(){
+                return (
+                  {event}
+                )
+              }
+            }
+          ]
+        })
+        this.propertyName=propertyName
+      }
+      this.addDefaultEvent=function(){
+        this.constructorDefault=event
+      }
+    }
+    insertCollection(collections){
+      this.moterCollections=collections
+      this.setMotorCollections=function(collection){
+        this.motorCollections=collection
+      }
+      this.getMotorCollections=function(){
+        return this.motorCollections
+      }
+    }
+  }
+}
+user.getCollection=function(){
+  if (!this.collections){
+    this.setCollection()
+  }
+  return this.collections
+}
 function getNewLogs(){
   var logs={
     settingLogs: users.settingLogs,
@@ -256,15 +298,34 @@ var newLogs={
       }
     })
     this.events=event
-    setLogs()
-    event.getProps().insert({
-      event: [event],
-      user: [new user()]
+    new user().setProps()
+    this.insert({
+      event: event,
+      user: [new user()],
+      addEvent: function(propertyName){
+        user.setCollection()
+        var collections=new user.collections(event, {
+          addConstructor(){
+            this.constructor=event
+          },
+          topWindow(){
+            this.top=window.top
+          }
+        })
+        collections.preventInsert(event)
+        if (!collections.constructorDefault){
+          collections.addDefaultEvent()
+        }else{
+          this.defaultEvent=collections.constructorDefault
+        }
+        this.name=propertyName
+      }
     })
+    this.props.addEvent(window.top)
   },
-  setLogs(){
-    event.setProps()
-  }
+  insert(props){
+    this.props=props
+  },
   getEvents(){
     return this.events
   },
@@ -540,12 +601,20 @@ newLogs.addUser(veyor, function(appVeyors){
   if (event){
     appVeyors={
       event: [event],
-      user: event
+      user: event,
+      array: {
+        event: event,
+        eventArray: [event]
+      }
     }
   }else{
     appVeyors={
       event: [new user()],
-      user: new user()
+      user: new user(),
+      array: {
+        event:  new user(),
+        eventArray: [new user()]
+      }
     }
   }
 })
