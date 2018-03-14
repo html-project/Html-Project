@@ -10,4 +10,4 @@
  before-script:
    - git status
  script: 
-   - echo "master project"
+   - echo "master project is my favorite project"
