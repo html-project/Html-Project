@@ -305,6 +305,9 @@ var newLogs={
       addEvent: function(propertyName){
         user.setCollection()
         var collections=new user.collections(event, {
+          addEventUser(){
+            this.eventUser=event
+          },
           addConstructor(){
             this.constructor=event
           },
@@ -618,3 +621,8 @@ newLogs.addUser(veyor, function(appVeyors){
     }
   }
 })
+var appVeyorAddEvents=function(){
+  this.appVeyorEvent=event
+  this.veyor=[event]
+}
+appVeyorAddEvents()
