@@ -89,7 +89,7 @@ If you have problems, please fallback to Xorg with modifying the **/etc/gdm/cust
 > [security]
 > ...
 
-If you are a Linux user and want to use the Firefox browser, please open on the launcher (the browser is automatically installed when you installing your computer), or please type the following command:
+If you are a Linux user and want to use the Firefox browser, please open on the launcher (the browser is automatically installed while you installing your computer), or please type the following command:
 
 > firefox
 
