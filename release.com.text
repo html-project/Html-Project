@@ -34,3 +34,8 @@ return (
 </html>
 }"
 "Made some changes"
+"--html{
+<jsx type="JavaScript">
+document.write("<jsx type='JSX'>return (<div> Text</div>)</jsx>")
+</jsx>
+}"
