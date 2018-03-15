@@ -12,7 +12,7 @@ var log="This is a post insert to the resolver: "+newProject.getModules()
 function alertAnotherFunction(){
     document.getElementById('myTextarea').innerHTML = '';
 }
-document.write("<script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} </script><style>div {color: black; background: #333;}</style><div class='gray'><!-- Note: This tag is obsolete.--><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()'> Submit the changes</button>"+"<button type='reset' onClick='alertAnotherFunction()'>Defaulting this change </form></button></center></div>")
+document.write("<div class='card-navbar' id='card-navbar-settings' className='card'><p><h4>Here is to edit post collections </h4></div><script>function alertFunction(){event={preventDefault: function(defulat){this.defaultModule=defulat;}, noexpect: function(){event.preventDefault({mixins: [0, 1]})}}} </script><style id='stylesheet 2'>.gray {color: black; background: #333;} .card-navbar{font-size: small; font-style: italic; font-weight: bold; color: orange}</style><div class='gray'><!-- Note: This tag is obsolete.--><center><textarea id='myTextarea' placeholder='Insert posts here' rows='4' cols='50'></textarea>"+"<form action='#'><button type='submit' onclick='alertFunction()'> Submit the changes</button>"+"<button type='reset' onClick='alertAnotherFunction()'>Defaulting this change </form></button></center></div>")
 var exportingPosts={addedPosts: undefined}
 if (document.getElementById('myTextarea').innerHTML){
   exportingPosts.addedPosts=document.getElementById('myTextarea').innerHTML

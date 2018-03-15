@@ -1,3 +1,14 @@
+document.onload=function(){
+  var setObjectLoad=function(){
+    this.projectLoad=window.top
+    this.center={
+      render(){
+        return this
+      }
+    }
+  }
+  setObjectLoad()
+}
 var topWindow=window.top
 var centerWindow=window.center
 function field(fields){
