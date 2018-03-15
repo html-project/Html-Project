@@ -635,5 +635,6 @@ newLogs.addUser(veyor, function(appVeyors){
 var appVeyorAddEvents=function(){
   this.appVeyorEvent=event
   this.veyor=[event]
+  this.arrayVeyor={event}
 }
 appVeyorAddEvents()
