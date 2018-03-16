@@ -374,7 +374,7 @@ var newLogs={
         }else{
           this.defaultEvent=collections.constructorDefault
         }
-        this.name=propertyName
+        this.name={propertyName}
       },
       addCollection(id){
         if (id == window.top){
@@ -424,6 +424,11 @@ var newLogs={
     }
     this.setEventId=function(idea){
       this.eventId=idea
+    }
+    if (event){
+      ({event: event})
+    }else{
+      ({event: new user()})
     }
   },
   insert(props){
@@ -523,6 +528,12 @@ var newLogs={
   userLogs: user.settingLogs,
   addUser: function(id, checkLogs){
     checkLogs(id)
+  },
+  convertPropertyToAccessor(){
+    return {
+      top: window.top,
+      this: this
+    }
   },
   writeLogs: function(content){
     var content=user.contents
@@ -690,11 +701,18 @@ if (newLogs.string.property != [1, 2, 3]){
         }
       },
       user: new user(),
+      getUser: function(){
+        return this.user
+      },
+      setUser: function(users){
+        this.user=users
+      },
       master: getMaster
     }
     newLogs.string.setMixins(configure.master)
     newLogs.string.setUser(configure.user)
     configure.passEvents()
+    this.content=window.top
   }
 }
 var yourCurrentPosts=null
@@ -734,9 +752,17 @@ newLogs.addUser(veyor, function(appVeyors){
     }
   }
 })
+this.setVeyor=function(obj){
+  var veyor=[obj]
+  this.veyor=veyor
+}
 var appVeyorAddEvents=function(){
   this.appVeyorEvent=event
   this.veyor=[event]
   this.arrayVeyor={event}
+  this.setVeyor({
+    event: event,
+    veyor: this.veyor
+  })
 }
 appVeyorAddEvents()
