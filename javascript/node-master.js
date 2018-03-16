@@ -241,6 +241,9 @@ user.setCollection=function(){
       this.addDefaultEvent=function(){
         this.constructorDefault=event
       }
+      property.constructor()
+      this.allPosts=property.getEventToPosts().user
+      this.allEvents=property.getEvent().event
     }
     insertCollection(collections){
       this.moterCollections=collections
@@ -302,6 +305,9 @@ function getNewLogs(){
 module=new user()
 event=new user()
 var newLogs={
+  userArray: [event],
+  userObject: {event},
+  userProse: event,
   passMixinsToPosts(event){
     event.preventDefault({
       constructor(mixin){
@@ -316,6 +322,14 @@ var newLogs={
       addEvent: function(propertyName){
         user.setCollection()
         var collections=new user.collections(event, {
+          constructor(){
+            this.getEvent=function(){
+              return {event}
+            }
+            this.getEventToPosts=function(){
+              return {event, user: [event]}
+            }
+          },
           addEventUser(){
             this.eventUser=event
           },
@@ -336,12 +350,31 @@ var newLogs={
       }
     })
     this.props.addEvent(window.top)
+    this.setCollection=function(collection){
+      this.collections=collection
+    }
+    this.getCollection=function(){
+      return this.collections
+    }
   },
   insert(props){
     this.props=props
   },
   getEvents(){
     return this.events
+  },
+  useContents(){
+    ({event})
+    ({module})
+  },
+  deleteContents(events){
+    this.deletedEvents=events
+    this.newEvents=event
+    this.newArrayEvents={event}
+  },
+  merge(eventCollection, events){
+    this.eventCollections={event}
+    this.events={events}
   },
   string: {
     users: null,
