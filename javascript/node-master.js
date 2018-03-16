@@ -244,6 +244,12 @@ user.setCollection=function(){
       property.constructor()
       this.allPosts=property.getEventToPosts().user
       this.allEvents=property.getEvent().event
+      var eventProperty=property.useEvent().event
+      if (event){
+        this.propertiesEvent={eventProperty: eventProperty, event: event}
+      }else{
+        this.propertiesEvent={eventProperty: eventProperty, event: new user()}
+      }
     }
     insertCollection(collections){
       this.moterCollections=collections
@@ -317,6 +323,7 @@ var newLogs={
     this.events=event
     new user().setProps()
     this.insert({
+      id: {event},
       event: event,
       user: [new user()],
       addEvent: function(propertyName){
@@ -328,6 +335,21 @@ var newLogs={
             }
             this.getEventToPosts=function(){
               return {event, user: [event]}
+            }
+            this.useEvent=function(){
+              if (!this.top){
+                if (event){
+                  return {event: event}
+                }else{
+                  return {event: new user()}
+                }
+              }else{
+                if (event){
+                  return {top: this.top, event: event}
+                }else{
+                  return {top: this.top, event: new user()}
+                }
+              }
             }
           },
           addEventUser(){
@@ -347,6 +369,18 @@ var newLogs={
           this.defaultEvent=collections.constructorDefault
         }
         this.name=propertyName
+      },
+      addCollection(id){
+        if (id == window.top){
+          this.id=id
+        }
+      },
+      getCollection(){
+        if (!this.id){
+          this.id=event
+          this.addCollection(window.top)
+        }
+        return this.id
       }
     })
     this.props.addEvent(window.top)
@@ -355,6 +389,35 @@ var newLogs={
     }
     this.getCollection=function(){
       return this.collections
+    }
+    var windowCollection={
+      getToEventCollection(){
+        newLogs.props.addCollection(window.top)
+        event.preventDefault({
+          constructor(){
+            return {event: event}
+          }
+        })
+      },
+      getEvent(){
+        if (event){
+          return event
+        }else{
+          return new user()
+        }
+      }
+    }
+    windowCollection.getToEventCollection()
+    this.top=this.props.getCollection().newLogs
+    this.eventId={
+      event: windowCollection.getEvent(),
+      id: window.top
+    }
+    this.getEventId=function(){
+      return this.eventId
+    }
+    this.setEventId=function(idea){
+      this.eventId=idea
     }
   },
   insert(props){
