@@ -1,4 +1,10 @@
 document.onload=function(){
+  var router={
+    getWindow(){
+      return window.top
+    }
+  }
+  this.topCenter=router.getWindow()
   var setObjectLoad=function(){
     this.projectLoad=window.top
     this.center={
