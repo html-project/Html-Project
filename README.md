@@ -12,7 +12,6 @@ python -m os --fetch-internet -p localhost:3000 "3000"
 ```
 ### Screenshots
 ![alt text](1.png)
-Follow these steps for installation:
 ## Installation
 If you are a Linux user and want to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
