@@ -9,7 +9,7 @@ If you are a Windows user and you want to use Chrome, please download at the off
 
 ```
 python -m SimpleHTTPServer 3000
-python -m os 3000
+python -m os 3000 --fetch -p localhost:3000
 ```
 ### Screenshots
 ![alt text](1.png)
