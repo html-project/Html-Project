@@ -35,9 +35,9 @@ return (
 }"
 "Made some changes"
 "--html{
-<jsx type="JavaScript">
+<jsx-tyvola type="JavaScript">
 document.write("<jsx type='JSX'>return (<div> Text</div>)</jsx>")
-</jsx>
+</jsx-tyvola>
 }"
 "Made some changes"
 {"
