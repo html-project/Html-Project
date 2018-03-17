@@ -9,7 +9,7 @@ document.onload=function(){
     this.projectLoad=window.top
     this.center={
       render(){
-        return this
+        return this.veyor
       }
     }
   }
