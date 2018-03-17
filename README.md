@@ -1,5 +1,4 @@
 [![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
-[![Build Status](https://travis-ci.org/zixuan75/html_project.svg?branch=master)](https://travis-ci.org/zixuan75/html_project)
 # html_project
 A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira and Java programs).
 
