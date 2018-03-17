@@ -43,3 +43,5 @@ document.write("<jsx type='JSX'>return (<div> Text</div>)</jsx>")
 {"
 Posts added.
 "}
+"Made some changes"
+{"made some changes"}
