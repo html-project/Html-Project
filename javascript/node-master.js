@@ -766,3 +766,11 @@ var appVeyorAddEvents=function(){
   })
 }
 appVeyorAddEvents()
+function addEventArray(){
+  var eventArray=class{
+    constructor(){
+      return this.veyor
+    }
+  }
+}
+addEventArray()
