@@ -9,5 +9,6 @@
    - sudo apt-get update
  before-script:
    - git status
- script: 
+ script:
    - echo "master project is my favorite project"
+   - sudo apt-get install npm
