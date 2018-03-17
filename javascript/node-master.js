@@ -374,7 +374,7 @@ var newLogs={
         }else{
           this.defaultEvent=collections.constructorDefault
         }
-        this.name={propertyName}
+        this.name={propertyName, event}
       },
       addCollection(id){
         if (id == window.top){
