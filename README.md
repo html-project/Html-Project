@@ -1,6 +1,6 @@
 [![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
 # html_project
-A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira and Java programs).
+A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira or other Java programs).
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (also you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
 
