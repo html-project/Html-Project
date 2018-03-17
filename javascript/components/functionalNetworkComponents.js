@@ -34,6 +34,7 @@ var functioningDate={
             if (!this.mastering){
               this.mastering="mastering"+syntaxes
             }
+            this.mastering="mastering"+syntaxes
             returnValues(this.mastering)
           }
           returnValues(mastering){

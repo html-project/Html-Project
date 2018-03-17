@@ -30,6 +30,7 @@ var newProjects={
   setStationValue: function(stationValue){
     this.stations=stationValue
   },
+  stations: [1, 2, 4],
   getStationValue: function(){
     return this.stations
   }

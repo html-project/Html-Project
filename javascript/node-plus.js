@@ -38,6 +38,13 @@ var plus=class{
   setPlus(model){
     this.plus=model
   }
+  waring(){
+    var masterWaring=this.setPlus(this.plus)
+    var waring=this.getPlus()
+    this.garble=masterWaring
+    this.waring=waring
+    this.toPlusSet=this.waring+this.garble
+  }
 }
 function callPlus(){
   users.model=plus
