@@ -12,4 +12,3 @@
  script:
    - echo "master project is my favorite project"
    - sudo apt-get install npm
-   - npm
