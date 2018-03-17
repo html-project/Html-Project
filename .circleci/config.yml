@@ -19,7 +19,7 @@ jobs:
     steps:
       - checkout
 
-      - run: echo "hello world to cjeckout for me"
+      - run: echo "hello world to checkout for me"
   test:
     docker: 
       - image: circleci/node:7.10
