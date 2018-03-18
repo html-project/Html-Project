@@ -14,6 +14,20 @@ document.onload=function(){
     }
   }
   setObjectLoad()
+  if (document.getElementById('myTextarea') != undefined){
+    $('#myTextarea').click=function(){
+      return ({
+        event: {event}
+      })
+    }
+    $('myTextarea').load=function(){
+      return ({
+        render(){
+          return {event}
+        }
+      })
+    }
+  }
 }
 var topWindow=window.top
 var centerWindow=window.center
@@ -256,9 +270,14 @@ user.setCollection=function(){
       }else{
         this.propertiesEvent={eventProperty: eventProperty, event: new user()}
       }
+      this.topList=property.passTop({writeLogs: event => function(){
+        return ({
+          event: {event}
+        })
+      }, event})
     }
     insertCollection(collections){
-      this.moterCollections=collections
+      this.motorCollections=collections
       this.setMotorCollections=function(collection){
         this.motorCollections=collection
       }
@@ -356,6 +375,12 @@ var newLogs={
                   return {top: this.top, event: new user()}
                 }
               }
+            }
+            this.passTop=function(obj){
+              this.event={event, obj: obj}
+              return (
+                this.event
+              )
             }
           },
           addEventUser(){
