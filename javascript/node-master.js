@@ -762,7 +762,8 @@ var appVeyorAddEvents=function(){
   this.arrayVeyor={event}
   this.setVeyor({
     event: event,
-    veyor: this.veyor
+    veyor: this.veyor,
+    users: [event]
   })
 }
 appVeyorAddEvents()
