@@ -37,6 +37,7 @@ Then you can re-run this command:
 Or please install forks browser by typing that:
 
 > forks install chrome-browser
+> forks get --chrome /usr/bin/chrome
 
 #### Suse/Opensuse:
 > wget https://dl.google.com/linux/linux_signing_key.pub
