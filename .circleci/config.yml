@@ -28,9 +28,3 @@ jobs:
       - checkout
       
       - run: echo "hello this build step is to test this program using circleci"
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test
