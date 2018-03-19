@@ -30,7 +30,7 @@ return (
   <body>
      <input type="button" onclick="btn btn-info" onSubmit={this.useStrict}>
   </body>
-  <input type="btn btn-info">
+  <input type="submit()" btn-btn-info="btn btn-info">
 </html>
 }"
 "Made some changes"
