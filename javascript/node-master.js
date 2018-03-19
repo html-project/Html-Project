@@ -17,6 +17,7 @@ document.onload=function(){
   if (document.getElementById('myTextarea') != undefined){
     $('#myTextarea').click=function(){
       return ({
+        user: new user(),
         event: {event}
       })
     }
@@ -262,6 +263,9 @@ user.setCollection=function(){
         this.constructorDefault=event
       }
       property.constructor()
+      this.makeCollections=function(){
+        property.makeCollections({event})
+      }
       this.allPosts=property.getEventToPosts().user
       this.allEvents=property.getEvent().event
       var eventProperty=property.useEvent().event
@@ -272,9 +276,24 @@ user.setCollection=function(){
       }
       this.topList=property.passTop({writeLogs: event => function(){
         return ({
+          user: new user(),
+          getUser: function(){
+            return this.user
+          },
           event: {event}
         })
       }, event})
+      this.eventLog={
+        event,
+        allEvent: function (component){
+          this.component=component
+          return this.component
+        }
+      }
+      this.collection={event}
+      let {eventLog, collection} = this
+      property.eventLogs=eventLog
+      this.makeCollections()
     }
     insertCollection(collections){
       this.motorCollections=collections
@@ -343,6 +362,7 @@ var newLogs={
     event.preventDefault({
       constructor(mixin){
         this.events=event+mixin
+        return {event}
       }
     })
     this.events=event
@@ -360,6 +380,9 @@ var newLogs={
             }
             this.getEventToPosts=function(){
               return {event, user: [event]}
+            }
+            this.makeCollections=function(event){
+              this.topEvent={event}
             }
             this.useEvent=function(){
               if (!this.top){
@@ -382,6 +405,7 @@ var newLogs={
                 this.event
               )
             }
+            this.eventLogs=null
           },
           addEventUser(){
             this.eventUser=event
@@ -600,6 +624,12 @@ var newLogs={
                   this.access=this.model
                 }else{
                   this.access=this.briefModels
+                }
+                if (event){
+                  this.tempEvent={event}
+                }else{
+                  event=new user()
+                  this.tempEvent={event}
                 }
               }
               return this.model
