@@ -1,8 +1,8 @@
 [![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
 # html_project
-A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira or other Java programs).
+A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira or other Java programs, for example, React).
 
-While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (also you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
+While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just don't meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (also you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
 
 If you are a Windows user and you want to use Chrome, please download at the offical website at [here](https://www.google.com/chrome/). If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/ for more details. In this program, we do it within like this to setup a local testing server, for example, to fetch those:
 
@@ -16,17 +16,6 @@ python -m os --fetch-internet -p localhost:3000 "3000"
 If you are a Linux user and want to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
 Follow those steps to install:
-###### Chromium:
-> sudo apt-get install chromium-browser
-
-###### Chrome:
-While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just not and that does not meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer.
-
-If you are a Windows user and you wish to use Chrome, please download at https://www.google.com/chrome/?brand=CHBD&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ3ZRscl36196s79SA9Qgkihl1OvjPRVWdvsasyAZLOlF637QIePSpEaAugBEALw_wcB. If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/.
-
-
-If you are a Linux user and wish to use Chrome, please follow the following steps:
-#### Debian/Ubuntu:
 ###### Chromium:
 > sudo apt-get install chromium-browser
 

@@ -14,6 +14,20 @@ document.onload=function(){
     }
   }
   setObjectLoad()
+  if (document.getElementById('myTextarea') != undefined){
+    $('#myTextarea').click=function(){
+      return ({
+        event: {event}
+      })
+    }
+    $('myTextarea').load=function(){
+      return ({
+        render(){
+          return {event}
+        }
+      })
+    }
+  }
 }
 var topWindow=window.top
 var centerWindow=window.center
@@ -256,9 +270,14 @@ user.setCollection=function(){
       }else{
         this.propertiesEvent={eventProperty: eventProperty, event: new user()}
       }
+      this.topList=property.passTop({writeLogs: event => function(){
+        return ({
+          event: {event}
+        })
+      }, event})
     }
     insertCollection(collections){
-      this.moterCollections=collections
+      this.motorCollections=collections
       this.setMotorCollections=function(collection){
         this.motorCollections=collection
       }
@@ -357,6 +376,12 @@ var newLogs={
                 }
               }
             }
+            this.passTop=function(obj){
+              this.event={event, obj: obj}
+              return (
+                this.event
+              )
+            }
           },
           addEventUser(){
             this.eventUser=event
@@ -374,7 +399,7 @@ var newLogs={
         }else{
           this.defaultEvent=collections.constructorDefault
         }
-        this.name={propertyName}
+        this.name={propertyName, event}
       },
       addCollection(id){
         if (id == window.top){
@@ -762,7 +787,8 @@ var appVeyorAddEvents=function(){
   this.arrayVeyor={event}
   this.setVeyor({
     event: event,
-    veyor: this.veyor
+    veyor: this.veyor,
+    users: [event]
   })
 }
 appVeyorAddEvents()
