@@ -401,9 +401,7 @@ var newLogs={
             }
             this.passTop=function(obj){
               this.event={event, obj: obj}
-              return (
-                this.event
-              )
+              return this.event
             }
             this.eventLogs=null
           },
