@@ -21,7 +21,7 @@ document.onload=function(){
         event: {event}
       })
     }
-    $('myTextarea').load=function(){
+    $('myTextarea').reload=function(){
       return ({
         render(){
           return {event}
@@ -828,3 +828,9 @@ function addEventArray(){
   }
 }
 addEventArray()
+var veyorPosts = event => function(){
+  return event
+}
+let {userArray, userObject} = newLogs
+this.userArray=userArray
+this.userObject=userObject
