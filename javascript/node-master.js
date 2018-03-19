@@ -21,7 +21,7 @@ document.onload=function(){
         event: {event}
       })
     }
-    $('myTextarea').load=function(){
+    $('myTextarea').reload=function(){
       return ({
         render(){
           return {event}
