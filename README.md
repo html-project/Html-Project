@@ -1,10 +1,10 @@
-![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w) **{{CircleCI Builds}}**
+![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
 # html_project
 A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira or other Java programs).
 
 While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just don't meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
 
-If you are a Windows user and you want to use Chrome, please download at the offical website at [here](https://www.google.com/chrome/). If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/ for more details. In this program, we do it within like this to setup a local testing server, for example, to fetch those:
+If you are a Windows user and you want to use Chrome, please download at the offical website at [here](https://www.google.com/chrome/). If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/ for more details. In this program, we do it within like this to setup a local testing server, for example:
 
 ```
 python -m SimpleHTTPServer 3000
@@ -74,7 +74,7 @@ EOF
 
 *****Note:***** *This is a unstable version of Google Chrome. Please use the Windows installer and configure at https://www.google.com/chrome/ to install the newest stable version or change your end of your command from `google-chrome-unstable` to `google-chrome-stable`.*
 
-If you have problems, please fallback to Xorg with modifying the **/etc/gdm/custom.conf** file on your computer:
+If you have problems, please fallback to Xorg by modifying the **/etc/gdm/custom.conf** file on your computer:
 
 > $$ GDM configuration storage
 >
@@ -126,4 +126,4 @@ The homepage is normal editing for the component of this description. The homepa
 
 Usually a homepage has a readme file and also don't have a contributing file (because anyone can contribute to the homepage repository), and there is also a homepage of repository on a large repository, for example, [vulhub's homepage](https://github.com/vulhub/vulhub-org). The homepage file not to be has a contributing file if there is no code in their homepage, and if there is a code in their homepage they could have a contributing file and it is usually written in HTML.
 ## Supplementary Information
-The **html_project** (also known as **html-project**) is a program written in HTML and JavaScript, which is able to insert posts to the local testing server collection of your browser, but based on your cloned repository. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file if they have conflicting values. If you have conflicting values of a JavaScript file within this program and it is not deleted, you may forgot to setup a local testing server. `If there is a conflicting value on your program, you need to cleanup using a JavaScript collection file or make changes and run the Java file on the projects folder. If you don't want it, please open an issue in our project and just commit to change the Java file and create a pull request on this repository. The Java file have commit permissions to the readme conflicting values at the owner's expense, and you did not need to commit to the Java file and force push it for example, you cannot force push to protected branches (such as master).`
+The **html_project** (also known as **html-project**) is a program written in HTML and JavaScript, which is able to insert posts to the local testing server collection of your browser, but based on your cloned repository. The Java code is to connect JavaScript within a JavaScript file, also delete some conflicting values for the JavaScript file if they have conflicting values. If you have conflicting values of a JavaScript file within this program and it is not deleted, you may forgot to setup a local testing server. `If there is a conflicting value on your program, you need to cleanup using a JavaScript collection file or make changes and run the Java file on the projects folder. If you don't want it, please open an issue in our project and just commit to change the Java file and create a pull request on this repository. The Java file have commit permissions to the readme conflicting values at the owner's expense, and you did not need to commit to the Java file and force push it for example, you cannot force push to protected branches, such as master (the default branch).`
