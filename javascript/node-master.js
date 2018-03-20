@@ -835,7 +835,7 @@ let {userArray, userObject} = newLogs
 this.userArray=userArray
 this.userObject=userObject
 this.userCompare={
-  object: event => function(){
+  object: function(){
     if (event){
       return event
     }else{
@@ -843,3 +843,4 @@ this.userCompare={
     }
   }
 }
+this.projectUser=this.userCompare.object()
