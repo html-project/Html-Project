@@ -834,3 +834,8 @@ var veyorPosts = function(){
 let {userArray, userObject} = newLogs
 this.userArray=userArray
 this.userObject=userObject
+this.userCompare={
+  object: event => function(){
+    return {event}
+  }
+}
