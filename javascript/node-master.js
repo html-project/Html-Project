@@ -552,6 +552,8 @@ var newLogs={
       }
       if (property!=undefined){
         return this.mixins
+      }else{
+        return {event}
       }
     },
     setMixins: function(mixins){
