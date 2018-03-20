@@ -15,7 +15,6 @@ python -m os --fetch-internet -p localhost:3000 "3000"
 ## Installation
 If you are a Linux user and want to use Chrome, please follow the following steps:
 #### Debian/Ubuntu:
-Follow those steps to install:
 ###### Chromium:
 > sudo apt-get install chromium-browser
 
