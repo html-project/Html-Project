@@ -1,8 +1,8 @@
-![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w)
+![Badge shield](https://circleci.com/gh/zixuan75/html_project.svg?style=shield&circle-token=w) **{{CircleCI Builds}}**
 # html_project
 A HTML and JavaScript program that runs browser Firefox and Chrome (access to Sadira or other Java programs).
 
-While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just don't meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (also you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
+While some features is supported for Firefox and Chrome, but it is not supported for Internet Explorer, because it is just don't meet the browser Internet Explorer, so that is why some features is not supported for Internet Explorer. The **repository** tag is not supported for Internet Explorer (you need to clone this repository to access your **repository** tag by running this command which is this command: `git clone https://github.com/zixuan75/html_project.git`).
 
 If you are a Windows user and you want to use Chrome, please download at the offical website at [here](https://www.google.com/chrome/). If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/ for more details. In this program, we do it within like this to setup a local testing server, for example, to fetch those:
 
