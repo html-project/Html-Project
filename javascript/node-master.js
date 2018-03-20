@@ -828,7 +828,7 @@ function addEventArray(){
   }
 }
 addEventArray()
-var veyorPosts = event => function(){
+var veyorPosts = function(){
   return event
 }
 let {userArray, userObject} = newLogs
