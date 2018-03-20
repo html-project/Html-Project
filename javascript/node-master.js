@@ -808,6 +808,7 @@ newLogs.addUser(veyor, function(appVeyors){
 this.setVeyor=function(obj){
   var veyor=[obj]
   this.veyor=veyor
+  this.veyorEvent={event}
 }
 var appVeyorAddEvents=function(){
   this.appVeyorEvent=event
