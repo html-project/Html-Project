@@ -836,6 +836,10 @@ this.userArray=userArray
 this.userObject=userObject
 this.userCompare={
   object: event => function(){
-    return {event}
+    if (event){
+      return event
+    }else{
+      return new user()
+    }
   }
 }
