@@ -18,16 +18,23 @@ document.onload=function(){
     $('#myTextarea').click=function(){
       return ({
         user: new user(),
+        script: window.top,
         event: {event}
       })
     }
-    $('myTextarea').reload=function(){
+    $('#myTextarea').reload=function(){
       return ({
         render(){
           return {event}
         }
       })
     }
+  }
+  if (event){
+    var reload=function(){
+      this.event={event}
+    }
+    reload()
   }
 }
 var topWindow=window.top
