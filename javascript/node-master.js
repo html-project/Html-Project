@@ -203,6 +203,9 @@ class user{
         return true
       },
       remove: function(){
+        if (event){
+          this.mixinEventContents={event}
+        }
         return true
       }
     })
