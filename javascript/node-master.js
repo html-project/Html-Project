@@ -25,6 +25,7 @@ document.onload=function(){
     $('#myTextarea').reload=function(){
       return ({
         render(){
+          this.props.script=window.top
           return {event}
         }
       })
@@ -68,6 +69,11 @@ function field(fields){
     }
     console.log(field)
     if (field != fields){
+      this.master=class{
+        constructor(){
+          return new console()
+        }
+      }
       return field
     }else{
       return fields+":"+field
@@ -200,6 +206,9 @@ class user{
         return true
       },
       change: function(){
+        if (event){
+          this.mixinEventContents={event}
+        }
         return true
       },
       remove: function(){
@@ -281,6 +290,11 @@ user.setCollection=function(){
       this.makeCollections=function(){
         property.makeCollections({event})
       }
+      var propertyCollections={
+        saveCollections: function(){
+          property.save({event}, new user())
+        }
+      }
       this.allPosts=property.getEventToPosts().user
       this.allEvents=property.getEvent().event
       var eventProperty=property.useEvent().event
@@ -307,8 +321,9 @@ user.setCollection=function(){
       }
       this.collection={event}
       let {eventLog, collection} = this
-      property.eventLogs=eventLog
+      property.setEventLogs(eventLog)
       this.makeCollections()
+      propertyCollections.saveCollections()
     }
     insertCollection(collections){
       this.motorCollections=collections
@@ -369,6 +384,19 @@ function getNewLogs(){
 }
 module=new user()
 event=new user()
+user.event={event}
+user.getEvent=function(){
+  if (event){
+    if (!this.event){
+      return {event}
+    }else{
+      return this.event
+    }
+  }else{
+    return new user()
+  }
+}
+this.event=user.getEvent()
 var newLogs={
   userArray: [event],
   userObject: {event},
@@ -419,6 +447,16 @@ var newLogs={
               return this.event
             }
             this.eventLogs=null
+            this.getEventLogs=function(){
+              return this.eventLogs
+            }
+            this.setEventLogs=function(eventLog){
+              this.eventLogs=eventLog
+            }
+            this.save=function(event, topEventLog){
+              this.eventTop={event}
+              this.eventLogTop=topEventLog
+            }
           },
           addEventUser(){
             this.eventUser=event
@@ -441,6 +479,8 @@ var newLogs={
       addCollection(id){
         if (id == window.top){
           this.id=id
+        }else{
+          this.tempId=id
         }
       },
       getCollection(){
@@ -822,6 +862,7 @@ newLogs.addUser(veyor, function(appVeyors){
     }
   }
 })
+newLogs.merge(new user(), event)
 this.setVeyor=function(obj){
   var veyor=[obj]
   this.veyor=veyor
