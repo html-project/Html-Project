@@ -35,6 +35,11 @@ document.onload=function(){
       this.event={event}
     }
     reload()
+  }else{
+    var reload=function(){
+      this.event=new user()
+    }
+    reload()
   }
 }
 var topWindow=window.top
