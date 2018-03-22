@@ -719,7 +719,7 @@ newLogs.string.array.setContent(event)
 var properties=newLogs.string.string([1, 2, 3, 4])
 callNewLogs(newLogs)
 document.write(
-  "<h3>"+newLogs+"\n"+"Objects: "+"</h3>"+"<font size='1'><p>"+properties+":"+user.contents+"</p></font>"
+  "<h3>"+newLogs+"\n"+"Objects: "+"</h3>"+"<font size='1' face='verdana'><p>"+properties+":"+user.contents+"</p></font>"
 )
 newLogs.writeLogs(user.contents)
 getNewLogs()
