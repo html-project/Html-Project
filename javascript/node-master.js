@@ -736,6 +736,8 @@ if (newLogs.string.property != [1, 2, 3]){
     getMaster: function(){
       if (this.master){
         return this.master
+      }else{
+        this.master=getMaster
       }
     },
     setMaster: function(masterFunc){
