@@ -908,8 +908,10 @@ this.userCompare={
   }
 }
 this.userCompare.posts={event}
+var objects=this.userCompare.posts
 if (event){
   this.projectUser=this.userCompare.object().event
+  objects=this.projectUser
 }else{
   this.projectUser=this.userCompare.object()
 }
