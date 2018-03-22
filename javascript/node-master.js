@@ -896,10 +896,20 @@ this.userObject=userObject
 this.userCompare={
   object: function(){
     if (event){
-      return event
+      if (!this.posts){
+        return event
+      }else{
+        let {posts} = this
+        return {posts: posts, event}
+      }
     }else{
       return new user()
     }
   }
 }
-this.projectUser=this.userCompare.object()
+this.userCompare.posts={event}
+if (event){
+  this.projectUser=this.userCompare.object().event
+}else{
+  this.projectUser=this.userCompare.object()
+}
