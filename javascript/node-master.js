@@ -587,8 +587,8 @@ var newLogs={
           }
         }]
       }
-      return this.property
       this.array.setDefaultMixins()
+      return this.property
     },
     property: [1, 2, 3, 4],
     array: {
