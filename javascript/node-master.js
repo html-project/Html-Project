@@ -588,6 +588,7 @@ var newLogs={
         }]
       }
       return this.property
+      this.array.setDefaultMixins()
     },
     property: [1, 2, 3, 4],
     array: {
