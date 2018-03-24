@@ -597,6 +597,11 @@ var newLogs={
           if ($('#body').val() != null){
             this.content=$('#body').val()
           }else{
+            if ($('#post-user').val() ){
+              this.post=$('#post-user').val()
+            }else{
+              this.post={event}
+            }
             this.content=event
           }
         }
