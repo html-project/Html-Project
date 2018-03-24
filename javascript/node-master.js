@@ -603,7 +603,7 @@ var newLogs={
             }else{
               this.post={event}
             }
-            this.content=event
+            this.content=$('#myTextarea').val()
           }
         }
         return this.content
