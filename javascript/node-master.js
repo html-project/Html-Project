@@ -44,6 +44,7 @@ document.onload=function(){
   }
 }
 var topWindow=window.top
+var content=topWindow
 var centerWindow=window.center
 function field(fields){
   if (fields != ""){
@@ -933,6 +934,7 @@ if (event){
   }else{
     this.projectUser=this.userCompare.object()
     this.userEventProject=this.eventPostObject.constructor()
+    user.objects=this.projectUser
   }
   objects=this.projectUser
 }
