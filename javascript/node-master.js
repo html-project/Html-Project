@@ -292,6 +292,11 @@ user.setCollection=function(){
       }
       var propertyCollections={
         saveCollections: function(){
+          new user().preventDefault({
+            constructor(){
+              return {event}
+            }
+          })
           property.save({event}, new user())
         }
       }
@@ -324,6 +329,7 @@ user.setCollection=function(){
       property.setEventLogs(eventLog)
       this.makeCollections()
       propertyCollections.saveCollections()
+      this.defaultUser=property.user
     }
     insertCollection(collections){
       this.motorCollections=collections
@@ -457,6 +463,7 @@ var newLogs={
               this.eventTop={event}
               this.eventLogTop=topEventLog
             }
+            this.user=new user()
           },
           addEventUser(){
             this.eventUser=event
@@ -491,6 +498,7 @@ var newLogs={
         return this.id
       }
     })
+    this.collections=user.getCollection()
     this.props.addEvent(window.top)
     this.setCollection=function(collection){
       this.collections=collection
