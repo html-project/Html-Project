@@ -593,6 +593,9 @@ var newLogs={
     array: {
       mixins: null,
       content: null,
+      setMixin: function(post){
+        this.mixins=post
+      },
       getContent: function(){
         if (!this.content){
           if ($('#body').val() != null){
@@ -606,6 +609,7 @@ var newLogs={
             this.content=$('#myTextarea').val()
           }
         }
+        this.setMixin(this.post)
         return this.content
       },
       setContent: function(content){
