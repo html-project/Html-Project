@@ -915,6 +915,14 @@ this.userCompare={
     }else{
       return new user()
     }
+  },
+  getEvent(){
+    return {event}
+  }
+}
+this.eventPostObject={
+  constructor(){
+    return event
   }
 }
 this.userCompare.posts={event}
@@ -924,6 +932,8 @@ if (event){
     this.projectUser=this.userCompare.object().event
   }else{
     this.projectUser=this.userCompare.object()
+    this.userEventProject=this.eventPostObject.constructor()
   }
   objects=this.projectUser
 }
+this.objectEvent=this.userCompare.getEvent()
