@@ -546,6 +546,11 @@ var newLogs={
     this.props=props
   },
   getEvents(){
+    if (!event){
+      this.event=new user()
+    }else{
+      this.event=event
+    }
     return this.events
   },
   useContents(){
