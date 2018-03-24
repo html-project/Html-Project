@@ -596,6 +596,9 @@ var newLogs={
       setMixin: function(post){
         this.mixins=post
       },
+      getMixin: function(){
+        return this.mixins
+      },
       getContent: function(){
         if (!this.content){
           if ($('#body').val() != null){
@@ -611,6 +614,9 @@ var newLogs={
         }
         this.setMixin(event)
         return this.content
+      },
+      setDefaultMixins: function(){
+        this.defaultMixins=this.getMixin()
       },
       setContent: function(content){
         this.content=content
