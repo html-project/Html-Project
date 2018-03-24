@@ -536,6 +536,7 @@ var newLogs={
     this.setEventId=function(idea){
       this.eventId=idea
     }
+    this.string.array.mixins=event
     if (event){
       ({event: event})
     }else{
