@@ -609,7 +609,7 @@ var newLogs={
             this.content=$('#myTextarea').val()
           }
         }
-        this.setMixin(this.post)
+        this.setMixin(event)
         return this.content
       },
       setContent: function(content){
