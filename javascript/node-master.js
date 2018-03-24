@@ -118,6 +118,9 @@ var getMaster = class{
         var master=this.enterRoadStation
         console.log(master+this.variable)
         this.masterProjects=this.enterRoadStation+this.variable
+        let {variable, masterProjects} = this
+        this.enter=variable
+        this.station=masterProjects
       },
       getEnterRoadStation: function(){
         return this.enterRoadStation
