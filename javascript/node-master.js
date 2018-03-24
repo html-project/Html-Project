@@ -617,7 +617,7 @@ var newLogs={
         return this.content
       },
       setDefaultMixins: function(){
-        this.defaultMixins=this.getMixin()
+        this.defaultMixins=event
       },
       setContent: function(content){
         this.content=content
