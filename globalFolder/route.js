@@ -50,6 +50,21 @@ mixinData={
       </master>
     })
   },
+  renderPosts(){
+    this.post=master.createClass({
+      renderPosts (){
+        return {this.props.content}
+      },
+      render(){
+        return (
+          {this.renderPosts()}
+        )
+      }
+    })
+    return (
+      {this.post}
+    )
+  },
   render(){
     return (
       <master key={
@@ -66,6 +81,7 @@ mixinData={
     {<re />}
     <master type='posts'>
       <posts key={MainRouter.posts}/>
+      {this.renderPosts()}
     </master>
   }
 })
