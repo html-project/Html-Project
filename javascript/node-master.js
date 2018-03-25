@@ -641,6 +641,17 @@ var newLogs={
           }]
           let {postVal} = this
           this.content=postVal.content
+          if (postVal.post != event){
+            postVal.post=event
+          }else if (postVal.post != new user() ){
+            postVal.post=new user()
+          }else{
+            if (event){
+              postVal.post=event
+            }else{
+              postVal.post=new user()
+            }
+          }
         }
         this.setMixin(event)
         return this.content
@@ -977,7 +988,12 @@ this.userCompare={
   }
 }
 this.eventPostObject={
+  postObject(){
+    return event
+  },
   constructor(){
+    ({event})
+    this.object=this.postObject()
     return event
   }
 }

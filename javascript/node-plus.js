@@ -29,6 +29,9 @@ var plus=class{
             console.log("Null station edited.")
           }else{
             this.plusSet=plus
+            this.postVariable={event}
+            let {postVariable} = this
+            postVariable.event=event
           }
         }
       }

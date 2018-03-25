@@ -90,7 +90,11 @@ function printValues(value){
               },
               getModule: function(){
                 if (!this.module){
-                  setModule(new user())
+                  if (!event){
+                    setModule(new user())
+                  }else{
+                    setModule(event)
+                  }
                 }
                 return this.module
               }
