@@ -52,6 +52,7 @@ mixinData={
         {this.posts()}
       </master>
     )
+    {<re />}
     <master type='posts'>
       <posts key={MainRouter.posts}/>
     </master>
