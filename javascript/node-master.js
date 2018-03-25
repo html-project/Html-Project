@@ -403,6 +403,8 @@ user.getEvent=function(){
     return new user()
   }
 }
+var events=user.event
+this.propertyEvent=events
 this.event=user.getEvent()
 var newLogs={
   userArray: [event],
@@ -419,6 +421,7 @@ var newLogs={
     new user().setProps()
     this.insert({
       id: {event},
+      collection: null,
       event: event,
       user: [new user()],
       addEvent: function(propertyName){
@@ -476,6 +479,7 @@ var newLogs={
             this.top=window.top
           }
         })
+        this.collection=collections
         collections.preventInsert(event)
         if (!collections.constructorDefault){
           collections.addDefaultEvent()
@@ -499,6 +503,7 @@ var newLogs={
         return this.id
       }
     })
+    this.property=this.props.collection
     this.collections=user.getCollection()
     this.props.addEvent(window.top)
     this.setCollection=function(collection){
@@ -507,6 +512,7 @@ var newLogs={
     this.getCollection=function(){
       return this.collections
     }
+    this.string.setUser(event)
     var windowCollection={
       getToEventCollection(){
         newLogs.props.addCollection(window.top)
@@ -515,6 +521,7 @@ var newLogs={
             return {event: event}
           }
         })
+        this.id=event
       },
       getEvent(){
         if (event){
@@ -612,6 +619,13 @@ var newLogs={
             }
             this.content=$('#myTextarea').val()
           }
+          this.postVal=[{
+            post: new user(),
+            event,
+            content: {event}
+          }]
+          let {postVal} = this
+          this.content=postVal.content
         }
         this.setMixin(event)
         return this.content
