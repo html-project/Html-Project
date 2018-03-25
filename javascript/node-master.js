@@ -982,6 +982,7 @@ this.userObject=userObject
 this.userCompare={
   object: function(){
     if (event){
+      this.userPosts={event}
       if (!this.posts){
         return event
       }else{
