@@ -848,6 +848,8 @@ if (newLogs.string.property != [1, 2, 3]){
   newLogs.string.getMixins([1, 2, 3, 4]).passMixin(event)
   var mixin={mixins: newLogs.string.getMixins([1, 2, 3, 4]).getMaster()}
   this.finalMixin=newLogs.string.getMixins([1, 2, 3, 4]).mixins()
+  let {finalMixin} = this
+  user.testUser=finalMixin
   variables.setMixins(mixin)
   newLogs.passMixinsToPosts(new user() )
   if (!this.props){
