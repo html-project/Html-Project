@@ -21,3 +21,39 @@ MainRouter.route('route, params', {
     })
   }
 })
+mixinData={
+  <master key={this.props.component}>
+    <field />
+  </master>
+}.map((event) => {
+  return (
+    <master type='div'>
+      {this.props.component.render()}
+    </master>
+  )
+}).createClass({
+  posts(){
+    return master.map((this) => {
+      <master type='insert-post'>
+        <insertPosts />
+      </master>
+    })
+  },
+  render(){
+    return (
+      <master key={
+        if (event != undefined){
+          MainRouter.setClass(
+            new user.component(event, {this.props.component})
+          )
+          return MainRouter.name('event-router-component').map({<master>})
+        }
+      }>
+        {this.posts()}
+      </master>
+    )
+    <master type='posts'>
+      <posts key={MainRouter.posts}/>
+    </master>
+  }
+})
