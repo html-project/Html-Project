@@ -503,6 +503,8 @@ var newLogs={
         }
         this.name={propertyName, event}
       },
+      idCollection: {window},
+      post: new user(),
       addCollection(id){
         if (id == window.top){
           this.id=id
