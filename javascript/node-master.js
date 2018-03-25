@@ -780,9 +780,9 @@ var newLogs={
         }
         getPostMixins(){
           if (event){
-            return event
+            return [event]
           }else{
-            return new user()
+            return [new user()]
           }
         }
       }
