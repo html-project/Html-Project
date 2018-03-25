@@ -29,6 +29,7 @@ mixinData={
   return (
     <master type='div'>
       {this.props.component.render()}
+      {<re />}
     </master>
   )
 }).createClass({
