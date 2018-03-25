@@ -30,6 +30,16 @@ mixinData={
     <master type='div'>
       {this.props.component.render()}
       {<re />}
+      <div>
+        <button type='submit' post-type={
+          return (
+            {<re />}
+          )
+        }</button>
+        <master div='true'>
+          {<re />}
+        </master>
+      </div>
     </master>
   )
 }).createClass({
