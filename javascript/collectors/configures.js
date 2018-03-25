@@ -1,4 +1,4 @@
-Components=master.createClass({
+configures=master.createClass({
   render(){
     return (
       <insertPosts />

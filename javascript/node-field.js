@@ -90,7 +90,7 @@ function printValues(value){
               },
               getModule: function(){
                 if (!this.module){
-                  setModule([1, 2])
+                  setModule(new user())
                 }
                 return this.module
               }
@@ -109,3 +109,5 @@ function printValues(value){
   }
 }
 printValues(values)
+this.event=new user()
+content=window.top

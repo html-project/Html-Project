@@ -429,6 +429,9 @@ var newLogs={
         var collections=new user.collections(event, {
           constructor(){
             this.getEvent=function(){
+              if (!event){
+                event=this.user[0]
+              }
               return {event}
             }
             this.getEventToPosts=function(){
@@ -479,6 +482,18 @@ var newLogs={
             this.top=window.top
           }
         })
+        this.postDetails={
+          event: event,
+          user: new user(),
+          getWindow: function(){
+            return window.top
+          },
+          getEvent: function(){
+            return this.event
+          }
+        }
+        let {postDetails} = this
+        this.event=postDetails.getEvent()
         this.collection=collections
         collections.preventInsert(event)
         if (!collections.constructorDefault){
