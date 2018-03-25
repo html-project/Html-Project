@@ -643,6 +643,17 @@ var newLogs={
           }]
           let {postVal} = this
           this.content=postVal.content
+          if (postVal.post != event){
+            postVal.post=event
+          }else if (postVal.post != new user() ){
+            postVal.post=new user()
+          }else{
+            if (event){
+              postVal.post=event
+            }else{
+              postVal.post=new user()
+            }
+          }
         }
         this.setMixin(event)
         return this.content
@@ -768,6 +779,13 @@ var newLogs={
             }
           }
           console.log(accessor+logs)
+        }
+        getPostMixins(){
+          if (event){
+            return [event]
+          }else{
+            return [new user()]
+          }
         }
       }
       console.log("%c User contents: "+course, 'color: #00FFFF')
@@ -979,7 +997,12 @@ this.userCompare={
   }
 }
 this.eventPostObject={
+  postObject(){
+    return event
+  },
   constructor(){
+    ({event})
+    this.object=this.postObject()
     return event
   }
 }
@@ -994,5 +1017,23 @@ if (event){
     user.objects=this.projectUser
   }
   objects=this.projectUser
+  this.postEventObject=event
+  user.vectorPost=function(){
+    if (!event){
+      newLogs.passMixinsToPosts(new user())
+    }else{
+      this.eventUser={event}
+      newLogs.passMixinsToPosts(event)
+    }
+  }
+  user.events={event}
+  let {events}=user
+  if (events != {event}){
+    if (event){
+      events=event
+    }else{
+      events=new user()
+    }
+  }
 }
 this.objectEvent=this.userCompare.getEvent()
