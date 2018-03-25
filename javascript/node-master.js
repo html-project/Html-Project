@@ -1017,5 +1017,14 @@ if (event){
       newLogs.passMixinsToPosts(event)
     }
   }
+  user.events={event}
+  let {events}=user
+  if (events != {event}){
+    if (event){
+      events=event
+    }else{
+      events=new user()
+    }
+  }
 }
 this.objectEvent=this.userCompare.getEvent()
