@@ -33,7 +33,9 @@ mixinData={
       <div>
         <button type='submit' post-type={
           return (
-            {<re />}
+            <div>
+              <re />
+            </div>
           )
         }</button>
         <master div='true'>
