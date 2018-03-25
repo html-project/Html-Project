@@ -1010,7 +1010,11 @@ if (event){
   objects=this.projectUser
   this.postEventObject=event
   user.vectorPost=function(){
-    newLogs.passMixinsToPosts(new user())
+    if (!event){
+      newLogs.passMixinsToPosts(new user())
+    }else{
+      newLogs.passMixinsToPosts(event)
+    }
   }
 }
 this.objectEvent=this.userCompare.getEvent()
