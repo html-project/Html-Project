@@ -778,6 +778,13 @@ var newLogs={
           }
           console.log(accessor+logs)
         }
+        getPostMixins(){
+          if (event){
+            return event
+          }else{
+            return new user()
+          }
+        }
       }
       console.log("%c User contents: "+course, 'color: #00FFFF')
     })
