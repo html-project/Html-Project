@@ -805,10 +805,14 @@ if (newLogs.string.property != [1, 2, 3]){
         }
       })
       event.variableTest()
+      this.mixins=function(){
+        return this.master
+      }
     }
   })
   newLogs.string.getMixins([1, 2, 3, 4]).passMixin(event)
   var mixin={mixins: newLogs.string.getMixins([1, 2, 3, 4]).getMaster()}
+  this.finalMixin=newLogs.string.getMixins([1, 2, 3, 4]).mixins()
   variables.setMixins(mixin)
   newLogs.passMixinsToPosts(new user() )
   if (!this.props){
