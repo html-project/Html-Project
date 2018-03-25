@@ -81,6 +81,8 @@ mixinData={
     {<re />}
     <master type='posts'>
       <posts key={MainRouter.posts} id={MainRouter.flowRouter}/>
+      <mainRouter />
+      {<re />}
       {this.renderPosts()}
     </master>
   }
