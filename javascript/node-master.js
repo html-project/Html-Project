@@ -998,6 +998,7 @@ this.userCompare={
         return {posts: posts, event}
       }
     }else{
+      this.userPosts=[new user()]
       return new user()
     }
   },
