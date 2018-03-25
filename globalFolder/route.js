@@ -75,6 +75,7 @@ mixinData={
           return MainRouter.name('event-router-component').map({<master>})
         }
       }>
+        {<re />}
         {this.posts()}
       </master>
     )
