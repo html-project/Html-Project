@@ -987,6 +987,14 @@ this.userCompare={
         return event
       }else{
         let {posts} = this
+        this.postUserCompare=function(){
+          return ({
+            event,
+            allPosts: {event},
+            user: new user(),
+            content: window.top
+          })
+        }
         return {posts: posts, event}
       }
     }else{
