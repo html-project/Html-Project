@@ -1013,6 +1013,7 @@ if (event){
     if (!event){
       newLogs.passMixinsToPosts(new user())
     }else{
+      this.eventUser={event}
       newLogs.passMixinsToPosts(event)
     }
   }
