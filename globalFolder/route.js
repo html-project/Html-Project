@@ -2,6 +2,7 @@
 {this.props.header}
 {this.convertToAccessor()}
 {this.props.footer}
+Data=event
 MainRouter.route('route, params', {
   mixins: [Data],
   actionTake(event){
