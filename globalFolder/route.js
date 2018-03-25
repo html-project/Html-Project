@@ -49,6 +49,7 @@ mixinData={
     return master.map((this) => {
       <master type='insert-post'>
         <insertPosts />
+        {<re />}
       </master>
     })
   },
