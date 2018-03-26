@@ -109,8 +109,7 @@ Please sure to be use the local testing server to the port 3000 (localhost:3000/
 Routers are here
 fromouthtion
 on
-enter road
-de statiuseolderghthtion.
+enter routh thtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
 #### Python 3
