@@ -110,8 +110,7 @@ Routers are here
 fromouthtion
 on
 enter road
-de station 
-for ffolderghthtion.
+de statiuseolderghthtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
 #### Python 3
