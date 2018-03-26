@@ -1060,6 +1060,7 @@ if (event){
   if (events != {event}){
     if (event){
       this.userEvent={event}
+      this.originEvent=event
       events=event
     }else{
       this.userEvent=new user()
