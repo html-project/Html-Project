@@ -627,6 +627,7 @@ var newLogs={
       getContent: function(){
         if (!this.content){
           if ($('#body').val() != null){
+            this.eventRoute=new user()
             this.content=$('#body').val()
           }else{
             if ($('#post-user').val() ){
