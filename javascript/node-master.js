@@ -1061,7 +1061,6 @@ if (event){
     if (event){
       this.userEvent={event}
       events=event
-      event post her
       evepo s
     }else{
       this.userEvent=new user()
