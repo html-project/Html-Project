@@ -657,7 +657,6 @@ var newLogs={
               postVal.post=new user()
               this.event=new user()
             }
-            post is here
           }
         }
         this.setMixin(event)
