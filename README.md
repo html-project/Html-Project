@@ -110,8 +110,7 @@ Routers are here
 from
 station
 on
-enter road station.
-this router ffolderghthtion.
+enter road de station for ffolderghthtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
 #### Python 3
