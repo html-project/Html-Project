@@ -1047,7 +1047,7 @@ if (event){
   this.postEventObject=event
   user.vectorPost=function(){
     if (!event){
-      this.eventUser=new user()
+      this.originalUser=event
       newLogs.passMixinsToPosts(new user())
     }else{
       this.eventUser={event}
