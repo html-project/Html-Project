@@ -112,8 +112,7 @@ station
 on
 enter road station.
 this router from this router is clone
-once stationed
-a installation.
+once srighthtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
 #### Python 3
