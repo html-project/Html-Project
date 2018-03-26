@@ -652,9 +652,12 @@ var newLogs={
             if (event){
               ({event})
               postVal.post=event
+              this.event=event
             }else{
               postVal.post=new user()
+              this.event=new user()
             }
+            post is here
           }
         }
         this.setMixin(event)
