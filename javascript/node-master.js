@@ -1065,7 +1065,7 @@ if (event){
       var zorigin dutay event
       variable var
       events=event
-      posin you
+      posi
     }else{
       this.userEvent=new user()
       events=new user()
