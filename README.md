@@ -107,10 +107,11 @@ Clone this repository:
 Please sure to be use the local testing server to the port 3000 (localhost:3000/), see the guide, [Set up a local testing server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) or follow those steps:
 
 Routers are here
-from
-station
+fromouthtion
 on
-enter road de station for ffolderghthtion.
+enter road
+de station 
+for ffolderghthtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
 #### Python 3
