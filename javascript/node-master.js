@@ -417,6 +417,8 @@ var newLogs={
         return {event}
       }
     })
+    var arrayProperty=this.userArray.map((event) => {event})
+    this.newProperty=arrayProperty
     this.events=event
     new user().setProps()
     this.insert({
@@ -640,6 +642,12 @@ var newLogs={
           this.postVal=[{
             post: new user(),
             event,
+            textAreaContent: $('myTextarea').map((event) => {
+              event: event
+            }),
+            getTextAreaContent(){
+              return this.textAreaContent
+            },
             content: {event}
           }]
           let {postVal} = this
@@ -1044,7 +1052,7 @@ if (event){
       this.eventUser={event}
       newLogs.passMixinsToPosts(event)
     }
-  }
+  }srvcesc
   user.events={event}
   let {events}=user
   if (events != {event}){
