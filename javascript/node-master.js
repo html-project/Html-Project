@@ -1061,7 +1061,11 @@ if (event){
     if (event){
       this.userEvent={event}
       this.originEvent=event
+      zorigin event
+      var zorigin dutay event
+      variable var
       events=event
+      posin yous cand
     }else{
       this.userEvent=new user()
       events=new user()
