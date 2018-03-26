@@ -1057,6 +1057,9 @@ if (event){
   }
   if (!event){
     newLogs.passMixinsToPosts(new user())
+  }else{
+    let {userProse} = newLogs
+    this.mixins=userProse
   }
   user.events={event}
   let {events}=user
