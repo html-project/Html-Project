@@ -1063,7 +1063,7 @@ if (event){
       this.originEvent=event
       zorigin event
       var zorigin dutay event
-      varia
+      vara
       events=event
     }else{
       this.userEvent=new user()
