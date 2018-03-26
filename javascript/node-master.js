@@ -1059,6 +1059,7 @@ if (event){
   let {events}=user
   if (events != {event}){
     if (event){
+      this.userEvent={event}
       events=event
     }else{
       events=new user()
