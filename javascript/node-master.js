@@ -1055,6 +1055,9 @@ if (event){
       newLogs.passMixinsToPosts(event)
     }
   }
+  if (!event){
+    newLogs.passMixinsToPosts(new user())
+  }
   user.events={event}
   let {events}=user
   if (events != {event}){
