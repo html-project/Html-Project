@@ -40,8 +40,8 @@ Or please install forks browser by typing that:
 
 If you not installed forks, please install by typing that:
 
-> sudo apt-get install forks-chrome 
-
+> sudo apt-get install forks-installer
+> forks-installer install --save-cache
 #### Suse/Opensuse:
 > wget https://dl.google.com/linux/linux_signing_key.pub
 >
