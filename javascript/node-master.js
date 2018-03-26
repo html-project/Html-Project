@@ -900,6 +900,7 @@ if (newLogs.string.property != [1, 2, 3]){
       },
       user: new user(),
       getUser: function(){
+        this.propertyEvent={event}
         return this.user
       },
       setUser: function(users){
