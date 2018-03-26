@@ -7,8 +7,8 @@ While some features is supported for Firefox and Chrome, but it is not supported
 If you are a Windows user and you want to use Chrome, please download at the offical website at [here](https://www.google.com/chrome/). If you want to use Firefox on Windows, please download at https://www.mozilla.org/en-US/firefox/new/ for more details. In this program, we do it within like this to setup a local testing server, for example, you can do this:
 
 ```
-python -m SimpleHTTPServer 3000
-python -m os --fetch-internet -p localhost:3000 "3000"
+python -m SimpleHTTPServer 3000 --fetch
+python -m os --fetch-internet -p localhost:3000
 ```
 ### Screenshots
 ![alt text](1.png)
