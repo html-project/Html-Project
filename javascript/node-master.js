@@ -913,6 +913,8 @@ if (newLogs.string.property != [1, 2, 3]){
     this.content=window.top
   }
 }
+this.posts='new user()'
+this.userPosts=new user()
 var yourCurrentPosts=null
 var veyor=null
 if (event){
