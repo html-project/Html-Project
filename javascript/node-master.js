@@ -1060,6 +1060,7 @@ if (event){
   if (events != {event}){
     if (event){
       this.userEvent={event}
+      this.arrayOriginEvent=[event]
       this.originEvent=event
       events=event
     }else{
