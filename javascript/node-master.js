@@ -1050,7 +1050,7 @@ if (event){
       this.eventUser=new user()
       newLogs.passMixinsToPosts(new user())
     }else{
-      this.eventUser=event
+      this.eventUser={event}
       newLogs.passMixinsToPosts(event)
     }
   }
