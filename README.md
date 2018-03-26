@@ -107,8 +107,7 @@ Clone this repository:
 Please sure to be use the local testing server to the port 3000 (localhost:3000/), see the guide, [Set up a local testing server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) or follow those steps:
 
 Routers are here
-fromouthtion
-on
+fromouand
 enter routh thtion.
 #### Python 2
 > python -m SimpleHTTPServer 3000
