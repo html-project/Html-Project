@@ -1061,7 +1061,7 @@ if (event){
     if (event){
       this.userEvent={event}
       this.originEvent=event
-      zorigin ev
+      zorig
       events=event
     }else{
       this.userEvent=new user()
