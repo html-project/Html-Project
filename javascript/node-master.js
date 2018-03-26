@@ -650,6 +650,7 @@ var newLogs={
             postVal.post=new user()
           }else{
             if (event){
+              ({event})
               postVal.post=event
             }else{
               postVal.post=new user()
