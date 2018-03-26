@@ -1062,7 +1062,7 @@ if (event){
       this.userEvent={event}
       events=event
       event post her
-      evepo st event e
+      evepo s
     }else{
       this.userEvent=new user()
       events=new user()
