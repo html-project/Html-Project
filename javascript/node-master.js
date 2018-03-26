@@ -1052,7 +1052,7 @@ if (event){
       this.eventUser={event}
       newLogs.passMixinsToPosts(event)
     }
-  }srvcesc
+  }
   user.events={event}
   let {events}=user
   if (events != {event}){
