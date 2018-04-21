@@ -1,0 +1,12 @@
+{
+  "json-data": {
+    "manualData": {
+      "dataComponent": false,
+      "addData": true
+    },
+    "components": true
+  },
+  "changeJsonData": true,
+  "settingJsonData": false,
+  "publicJsonData": true,
+}

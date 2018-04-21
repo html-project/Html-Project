@@ -1,0 +1,68 @@
+{
+  "turnJavaScriptOn": true,
+  "JavaScript": {
+    "hex": {
+      "returnHex": "localhost:50/javascript/node-master.js",
+      "hexUrl": "https://localhost:50/javascript/node-master.js"
+    },
+    "localhost": {
+      "proxy": true,
+      "returnLocalhost": "localhost:50/javascript/node-master.js",
+      "localhostUrl": "https://localhost:50/javascript/node-master.js",
+      "localhostUrlReverse": "localhost:50/javascript/node-master.js"
+    }
+  },
+  "hexJavaScript": false,
+  "JavaScriptItemPath": "localhost:50/javascript",
+  "JavaScriptItemUrl": "https://localhost:50/javascript",
+  "mainJavaScript": {
+    "proxy": true,
+    "JavaScriptUrl": "https://localhost:50/javascript/node-master.js",
+    "JavaScriptUrlReverse": "https://localhost:50/javascript/node-master.js",
+    "collection": {
+      "localhost": 50,
+      "path": "localhost:50/javascript/node-master.js",
+      "url": "https://localhost:50/javascript/node-master.js",
+      "reverseUrl": "https://localhost:50/html/fields/inScripts/master.html",
+      "info": {
+        "service": {
+          "path": "localhost:50/javascript/node-master.js",
+          "function": {
+            "proxy": true,
+            "offJavaScript": false
+          },
+          "url": "https://localhost:50/javascript/node-master.js"
+        },
+        "master": {
+          "path": "localhost:50/html/node-master.html",
+          "function": {
+            "proxy": true,
+            "offJavaScript": false
+          }
+        },
+        "masterPath": "localhost:50/html/node-master.html",
+        "masterUrl": "https://localhost:50/html/node-master.html"
+      }
+    },
+    "urlCollection": {
+      "nodigit": true,
+      "hexUrl": "https://localhost:50/javascript/node-master.js",
+      "path": "/html/node-master.html",
+      "reversePath": "/html/fields/inScripts/InsertPosts.html"
+    }
+  },
+  "url": "localhost:50",
+  "reverseUrl": "https://localhost:50",
+  "proxyItem": {
+    "offProxy": false,
+    "proxy": true,
+    "proxyUrl": "https://proxy.localhost:50"
+  },
+  "allProxies": [{
+    "path": "proxy.({localhost:50})",
+    "url": "https://proxy.localhost:50",
+    "proxy": true
+  }],
+  "turnOnProxy": true,
+  "archive": false
+}

@@ -1,0 +1,20 @@
+{
+  "attributes": {
+    "Index": false,
+    "FreeAddition": true,
+    "MasterAttributes": {
+      "DataProcessing": false,
+      "DataProcessesed": true,
+      "DataBegins": false
+    },
+    "AttributeAdditions": {
+      "addBounds": true,
+      "modifyBounds": true,
+      "moveBounds": true,
+    },
+  },
+  "bounds": false,
+  "processedBounds": true,
+  "processingBounds": false,
+  "changeVarBounds": false
+}
