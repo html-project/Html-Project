@@ -1,0 +1,49 @@
+release: 0.9.6
+"Made some changes"
+"{
+delete return;
+}"
+
+"Made some changes"
+"{
+delete return;
+var class=class{constructor(){{this.useStrict}}};
+}"
+"Made some changes"
+"--css{
+  div{
+     width: 90px,
+     height: 150px
+  }
+}"
+"{
+'use strict';
+}"
+"Made some changes"
+"--jsx{
+return (
+  <input type="btn btn-info" onSubmit={this.useStrict}>
+)
+}"
+"--html{
+<html>
+  <body>
+     <input type="button" onclick="btn btn-info" onSubmit={this.useStrict}>
+  </body>
+  <input type="submit()" btn-btn-info="btn btn-info">
+</html>
+}"
+"Made some changes"
+"--html{
+<jsx-tyvola type="JavaScript">
+document.write("<jsx type='JSX'>return (<div> Text</div>)</jsx>")
+</jsx-tyvola>
+}"
+"Made some changes"
+{"
+Posts added.
+"}
+"Made some changes"
+{"made some changes, to stations for you hpos"}
+"Tyvola===
+"Made some changes"
