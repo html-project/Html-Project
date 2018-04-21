@@ -1,0 +1,14 @@
+ language: python
+ env:
+   - R_LIBS_USER=~/R
+ install:
+   - sudo apt-add-repository -y ppa:marutter/rdev
+   - sudo apt-get install git
+   - sudo apt-get install git-extras
+ before-install:
+   - sudo apt-get update
+ before-script:
+   - git status
+ script:
+   - echo "master project is my favorite project"
+   - sudo apt-get install npm
